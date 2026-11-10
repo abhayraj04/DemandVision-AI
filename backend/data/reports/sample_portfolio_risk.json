@@ -1,0 +1,33 @@
+{
+  "portfolio_allocation": {
+    "RELIANCE": 20.0,
+    "TCS": 15.0,
+    "HDFCBANK": 20.0,
+    "INFY": 15.0,
+    "ITC": 15.0,
+    "BHARTIARTL": 15.0
+  },
+  "expected_annual_return": 17.97,
+  "annualized_volatility": 17.31,
+  "diversification_ratio": 1.55,
+  "sharpe_ratio": 0.67,
+  "sortino_ratio": 0.94,
+  "max_drawdown_pct": 33.37,
+  "var_cvar": {
+    "95%": {
+      "historical_var_1d": 1.47,
+      "historical_cvar_1d": 2.44,
+      "parametric_var_1d": 1.72,
+      "cornish_fisher_var_1d": 1.14,
+      "historical_var_10d": 4.64
+    },
+    "99%": {
+      "historical_var_1d": 2.84,
+      "historical_cvar_1d": 4.65,
+      "parametric_var_1d": 2.47,
+      "cornish_fisher_var_1d": 5.44,
+      "historical_var_10d": 8.98
+    }
+  },
+  "risk_tier": "Moderate"
+}

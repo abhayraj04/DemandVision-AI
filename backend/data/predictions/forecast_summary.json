@@ -1,0 +1,79 @@
+{
+  "RELIANCE": {
+    "current_price": 1210.7,
+    "best_validation_model": "ARIMA_2_1_2",
+    "best_rmse": 32.5123,
+    "7d_expected_return": -0.01,
+    "30d_expected_return": -0.0
+  },
+  "TCS": {
+    "current_price": 4158.8,
+    "best_validation_model": "SARIMAX_Weekly",
+    "best_rmse": 80.3345,
+    "7d_expected_return": 0.05,
+    "30d_expected_return": 0.04
+  },
+  "INFY": {
+    "current_price": 1906.0,
+    "best_validation_model": "Naive",
+    "best_rmse": 69.9277,
+    "7d_expected_return": -0.01,
+    "30d_expected_return": -0.01
+  },
+  "HDFCBANK": {
+    "current_price": 888.95,
+    "best_validation_model": "ARIMA_2_1_2",
+    "best_rmse": 7.7477,
+    "7d_expected_return": -0.06,
+    "30d_expected_return": -0.03
+  },
+  "ICICIBANK": {
+    "current_price": 1294.65,
+    "best_validation_model": "Moving_Average_20",
+    "best_rmse": 33.2442,
+    "7d_expected_return": 0.09,
+    "30d_expected_return": 0.08
+  },
+  "SBIN": {
+    "current_price": 788.3,
+    "best_validation_model": "Moving_Average_20",
+    "best_rmse": 37.1218,
+    "7d_expected_return": -0.03,
+    "30d_expected_return": 0.02
+  },
+  "ITC": {
+    "current_price": 459.31,
+    "best_validation_model": "SARIMAX_Weekly",
+    "best_rmse": 5.895,
+    "7d_expected_return": 0.01,
+    "30d_expected_return": 0.07
+  },
+  "LT": {
+    "current_price": 3578.95,
+    "best_validation_model": "Moving_Average_20",
+    "best_rmse": 124.5756,
+    "7d_expected_return": 0.14,
+    "30d_expected_return": 0.07
+  },
+  "AXISBANK": {
+    "current_price": 1069.95,
+    "best_validation_model": "ARIMA_2_1_2",
+    "best_rmse": 13.2146,
+    "7d_expected_return": -0.02,
+    "30d_expected_return": 0.02
+  },
+  "BHARTIARTL": {
+    "current_price": 1586.9,
+    "best_validation_model": "Naive",
+    "best_rmse": 85.5417,
+    "7d_expected_return": 0.04,
+    "30d_expected_return": 0.04
+  },
+  "NIFTY_50": {
+    "current_price": 24994.7,
+    "best_validation_model": "Moving_Average_20",
+    "best_rmse": 512.4492,
+    "7d_expected_return": 0.04,
+    "30d_expected_return": -0.01
+  }
+}

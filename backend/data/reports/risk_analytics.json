@@ -1,0 +1,3005 @@
+{
+  "RELIANCE": {
+    "symbol": "RELIANCE",
+    "annualized_volatility": 28.93,
+    "rolling_volatility_21d": 18.24,
+    "rolling_volatility_63d": 21.71,
+    "annualized_return_1y": -2.92,
+    "max_drawdown_pct": 45.09,
+    "drawdown_peak_date": "2019-12-19",
+    "drawdown_trough_date": "2020-03-23",
+    "sharpe_ratio": 0.47,
+    "sortino_ratio": 0.69,
+    "beta_vs_nifty50": 1.12,
+    "jensens_alpha_pct": 5.12,
+    "risk_free_rate_used": 6.5,
+    "var_cvar": {
+      "95%": {
+        "historical_var_1d": 2.43,
+        "historical_cvar_1d": 3.84,
+        "parametric_var_1d": 2.92,
+        "cornish_fisher_var_1d": 2.76,
+        "historical_var_10d": 7.69
+      },
+      "99%": {
+        "historical_var_1d": 4.13,
+        "historical_cvar_1d": 6.73,
+        "parametric_var_1d": 4.16,
+        "cornish_fisher_var_1d": 8.44,
+        "historical_var_10d": 13.05
+      }
+    },
+    "rolling_drawdowns": [
+      {
+        "date": "2024-10-03",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-04",
+        "drawdown_pct": -1.45
+      },
+      {
+        "date": "2024-10-07",
+        "drawdown_pct": -2.58
+      },
+      {
+        "date": "2024-10-08",
+        "drawdown_pct": -0.68
+      },
+      {
+        "date": "2024-10-09",
+        "drawdown_pct": -2.3
+      },
+      {
+        "date": "2024-10-10",
+        "drawdown_pct": -2.55
+      },
+      {
+        "date": "2024-10-11",
+        "drawdown_pct": -2.48
+      },
+      {
+        "date": "2024-10-14",
+        "drawdown_pct": -2.45
+      },
+      {
+        "date": "2024-10-15",
+        "drawdown_pct": -4.47
+      },
+      {
+        "date": "2024-10-16",
+        "drawdown_pct": -3.76
+      },
+      {
+        "date": "2024-10-17",
+        "drawdown_pct": -3.59
+      },
+      {
+        "date": "2024-10-18",
+        "drawdown_pct": -3.39
+      },
+      {
+        "date": "2024-10-21",
+        "drawdown_pct": -2.68
+      },
+      {
+        "date": "2024-10-22",
+        "drawdown_pct": -4.52
+      },
+      {
+        "date": "2024-10-23",
+        "drawdown_pct": -4.87
+      },
+      {
+        "date": "2024-10-24",
+        "drawdown_pct": -4.77
+      },
+      {
+        "date": "2024-10-25",
+        "drawdown_pct": -5.62
+      },
+      {
+        "date": "2024-10-28",
+        "drawdown_pct": -5.16
+      },
+      {
+        "date": "2024-10-29",
+        "drawdown_pct": -4.76
+      },
+      {
+        "date": "2024-10-30",
+        "drawdown_pct": -4.48
+      },
+      {
+        "date": "2024-10-31",
+        "drawdown_pct": -5.33
+      },
+      {
+        "date": "2024-11-01",
+        "drawdown_pct": -4.86
+      },
+      {
+        "date": "2024-11-04",
+        "drawdown_pct": -7.45
+      },
+      {
+        "date": "2024-11-05",
+        "drawdown_pct": -7.23
+      },
+      {
+        "date": "2024-11-06",
+        "drawdown_pct": -5.8
+      },
+      {
+        "date": "2024-11-07",
+        "drawdown_pct": -7.2
+      },
+      {
+        "date": "2024-11-08",
+        "drawdown_pct": -8.76
+      },
+      {
+        "date": "2024-11-11",
+        "drawdown_pct": -9.54
+      },
+      {
+        "date": "2024-11-12",
+        "drawdown_pct": -9.43
+      },
+      {
+        "date": "2024-11-13",
+        "drawdown_pct": -11.01
+      },
+      {
+        "date": "2024-11-14",
+        "drawdown_pct": -9.91
+      },
+      {
+        "date": "2024-11-18",
+        "drawdown_pct": -10.39
+      },
+      {
+        "date": "2024-11-19",
+        "drawdown_pct": -11.75
+      },
+      {
+        "date": "2024-11-21",
+        "drawdown_pct": -13.08
+      },
+      {
+        "date": "2024-11-22",
+        "drawdown_pct": -10.06
+      },
+      {
+        "date": "2024-11-25",
+        "drawdown_pct": -8.53
+      },
+      {
+        "date": "2024-11-26",
+        "drawdown_pct": -7.91
+      },
+      {
+        "date": "2024-11-27",
+        "drawdown_pct": -8.09
+      },
+      {
+        "date": "2024-11-28",
+        "drawdown_pct": -9.68
+      },
+      {
+        "date": "2024-11-29",
+        "drawdown_pct": -8.16
+      },
+      {
+        "date": "2024-12-02",
+        "drawdown_pct": -6.95
+      },
+      {
+        "date": "2024-12-03",
+        "drawdown_pct": -5.95
+      },
+      {
+        "date": "2024-12-04",
+        "drawdown_pct": -6.97
+      },
+      {
+        "date": "2024-12-05",
+        "drawdown_pct": -6.04
+      },
+      {
+        "date": "2024-12-06",
+        "drawdown_pct": -6.78
+      },
+      {
+        "date": "2024-12-09",
+        "drawdown_pct": -7.95
+      },
+      {
+        "date": "2024-12-10",
+        "drawdown_pct": -8.68
+      },
+      {
+        "date": "2024-12-11",
+        "drawdown_pct": -9.15
+      },
+      {
+        "date": "2024-12-12",
+        "drawdown_pct": -10.24
+      },
+      {
+        "date": "2024-12-13",
+        "drawdown_pct": -9.53
+      },
+      {
+        "date": "2024-12-16",
+        "drawdown_pct": -9.86
+      },
+      {
+        "date": "2024-12-17",
+        "drawdown_pct": -11.49
+      },
+      {
+        "date": "2024-12-18",
+        "drawdown_pct": -10.93
+      },
+      {
+        "date": "2024-12-19",
+        "drawdown_pct": -12.55
+      },
+      {
+        "date": "2024-12-20",
+        "drawdown_pct": -14.33
+      },
+      {
+        "date": "2024-12-23",
+        "drawdown_pct": -13.13
+      },
+      {
+        "date": "2024-12-24",
+        "drawdown_pct": -13.09
+      },
+      {
+        "date": "2024-12-26",
+        "drawdown_pct": -13.53
+      },
+      {
+        "date": "2024-12-27",
+        "drawdown_pct": -13.21
+      },
+      {
+        "date": "2024-12-30",
+        "drawdown_pct": -13.95
+      }
+    ]
+  },
+  "TCS": {
+    "symbol": "TCS",
+    "annualized_volatility": 24.45,
+    "rolling_volatility_21d": 17.48,
+    "rolling_volatility_63d": 20.56,
+    "annualized_return_1y": 10.75,
+    "max_drawdown_pct": 28.17,
+    "drawdown_peak_date": "2019-06-20",
+    "drawdown_trough_date": "2020-03-19",
+    "sharpe_ratio": 0.55,
+    "sortino_ratio": 0.81,
+    "beta_vs_nifty50": 0.69,
+    "jensens_alpha_pct": 8.18,
+    "risk_free_rate_used": 6.5,
+    "var_cvar": {
+      "95%": {
+        "historical_var_1d": 2.2,
+        "historical_cvar_1d": 3.42,
+        "parametric_var_1d": 2.45,
+        "cornish_fisher_var_1d": 2.37,
+        "historical_var_10d": 6.95
+      },
+      "99%": {
+        "historical_var_1d": 4.15,
+        "historical_cvar_1d": 5.48,
+        "parametric_var_1d": 3.5,
+        "cornish_fisher_var_1d": 5.11,
+        "historical_var_10d": 13.14
+      }
+    },
+    "rolling_drawdowns": [
+      {
+        "date": "2024-10-03",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-04",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-07",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-08",
+        "drawdown_pct": -0.46
+      },
+      {
+        "date": "2024-10-09",
+        "drawdown_pct": -0.47
+      },
+      {
+        "date": "2024-10-10",
+        "drawdown_pct": -1.06
+      },
+      {
+        "date": "2024-10-11",
+        "drawdown_pct": -2.89
+      },
+      {
+        "date": "2024-10-14",
+        "drawdown_pct": -3.19
+      },
+      {
+        "date": "2024-10-15",
+        "drawdown_pct": -3.65
+      },
+      {
+        "date": "2024-10-16",
+        "drawdown_pct": -4.16
+      },
+      {
+        "date": "2024-10-17",
+        "drawdown_pct": -3.83
+      },
+      {
+        "date": "2024-10-18",
+        "drawdown_pct": -3.51
+      },
+      {
+        "date": "2024-10-21",
+        "drawdown_pct": -4.52
+      },
+      {
+        "date": "2024-10-22",
+        "drawdown_pct": -6.02
+      },
+      {
+        "date": "2024-10-23",
+        "drawdown_pct": -4.84
+      },
+      {
+        "date": "2024-10-24",
+        "drawdown_pct": -5.26
+      },
+      {
+        "date": "2024-10-25",
+        "drawdown_pct": -5.04
+      },
+      {
+        "date": "2024-10-28",
+        "drawdown_pct": -4.26
+      },
+      {
+        "date": "2024-10-29",
+        "drawdown_pct": -4.62
+      },
+      {
+        "date": "2024-10-30",
+        "drawdown_pct": -4.4
+      },
+      {
+        "date": "2024-10-31",
+        "drawdown_pct": -7.12
+      },
+      {
+        "date": "2024-11-01",
+        "drawdown_pct": -6.76
+      },
+      {
+        "date": "2024-11-04",
+        "drawdown_pct": -7.22
+      },
+      {
+        "date": "2024-11-05",
+        "drawdown_pct": -7.06
+      },
+      {
+        "date": "2024-11-06",
+        "drawdown_pct": -3.12
+      },
+      {
+        "date": "2024-11-07",
+        "drawdown_pct": -2.85
+      },
+      {
+        "date": "2024-11-08",
+        "drawdown_pct": -2.95
+      },
+      {
+        "date": "2024-11-11",
+        "drawdown_pct": -1.74
+      },
+      {
+        "date": "2024-11-12",
+        "drawdown_pct": -1.77
+      },
+      {
+        "date": "2024-11-13",
+        "drawdown_pct": -2.87
+      },
+      {
+        "date": "2024-11-14",
+        "drawdown_pct": -2.97
+      },
+      {
+        "date": "2024-11-18",
+        "drawdown_pct": -5.93
+      },
+      {
+        "date": "2024-11-19",
+        "drawdown_pct": -5.46
+      },
+      {
+        "date": "2024-11-21",
+        "drawdown_pct": -4.68
+      },
+      {
+        "date": "2024-11-22",
+        "drawdown_pct": -0.66
+      },
+      {
+        "date": "2024-11-25",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-26",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-27",
+        "drawdown_pct": -0.46
+      },
+      {
+        "date": "2024-11-28",
+        "drawdown_pct": -2.48
+      },
+      {
+        "date": "2024-11-29",
+        "drawdown_pct": -1.88
+      },
+      {
+        "date": "2024-12-02",
+        "drawdown_pct": -1.75
+      },
+      {
+        "date": "2024-12-03",
+        "drawdown_pct": -1.15
+      },
+      {
+        "date": "2024-12-04",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-05",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-06",
+        "drawdown_pct": -0.42
+      },
+      {
+        "date": "2024-12-09",
+        "drawdown_pct": -0.27
+      },
+      {
+        "date": "2024-12-10",
+        "drawdown_pct": -0.71
+      },
+      {
+        "date": "2024-12-11",
+        "drawdown_pct": -0.82
+      },
+      {
+        "date": "2024-12-12",
+        "drawdown_pct": -0.2
+      },
+      {
+        "date": "2024-12-13",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-16",
+        "drawdown_pct": -1.31
+      },
+      {
+        "date": "2024-12-17",
+        "drawdown_pct": -3.25
+      },
+      {
+        "date": "2024-12-18",
+        "drawdown_pct": -2.82
+      },
+      {
+        "date": "2024-12-19",
+        "drawdown_pct": -4.52
+      },
+      {
+        "date": "2024-12-20",
+        "drawdown_pct": -6.79
+      },
+      {
+        "date": "2024-12-23",
+        "drawdown_pct": -7.05
+      },
+      {
+        "date": "2024-12-24",
+        "drawdown_pct": -6.58
+      },
+      {
+        "date": "2024-12-26",
+        "drawdown_pct": -6.81
+      },
+      {
+        "date": "2024-12-27",
+        "drawdown_pct": -6.91
+      },
+      {
+        "date": "2024-12-30",
+        "drawdown_pct": -7.04
+      }
+    ]
+  },
+  "INFY": {
+    "symbol": "INFY",
+    "annualized_volatility": 27.41,
+    "rolling_volatility_21d": 15.26,
+    "rolling_volatility_63d": 23.89,
+    "annualized_return_1y": 22.74,
+    "max_drawdown_pct": 37.34,
+    "drawdown_peak_date": "2019-09-06",
+    "drawdown_trough_date": "2020-03-23",
+    "sharpe_ratio": 0.6,
+    "sortino_ratio": 0.86,
+    "beta_vs_nifty50": 0.82,
+    "jensens_alpha_pct": 10.39,
+    "risk_free_rate_used": 6.5,
+    "var_cvar": {
+      "95%": {
+        "historical_var_1d": 2.46,
+        "historical_cvar_1d": 3.84,
+        "parametric_var_1d": 2.75,
+        "cornish_fisher_var_1d": 2.21,
+        "historical_var_10d": 7.78
+      },
+      "99%": {
+        "historical_var_1d": 4.46,
+        "historical_cvar_1d": 6.93,
+        "parametric_var_1d": 3.93,
+        "cornish_fisher_var_1d": 7.17,
+        "historical_var_10d": 14.1
+      }
+    },
+    "rolling_drawdowns": [
+      {
+        "date": "2024-10-03",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-04",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-07",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-08",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-09",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-10",
+        "drawdown_pct": -1.73
+      },
+      {
+        "date": "2024-10-11",
+        "drawdown_pct": -0.9
+      },
+      {
+        "date": "2024-10-14",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-15",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-16",
+        "drawdown_pct": -2.0
+      },
+      {
+        "date": "2024-10-17",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-18",
+        "drawdown_pct": -4.5
+      },
+      {
+        "date": "2024-10-21",
+        "drawdown_pct": -5.86
+      },
+      {
+        "date": "2024-10-22",
+        "drawdown_pct": -5.92
+      },
+      {
+        "date": "2024-10-23",
+        "drawdown_pct": -4.81
+      },
+      {
+        "date": "2024-10-24",
+        "drawdown_pct": -5.32
+      },
+      {
+        "date": "2024-10-25",
+        "drawdown_pct": -5.39
+      },
+      {
+        "date": "2024-10-28",
+        "drawdown_pct": -5.22
+      },
+      {
+        "date": "2024-10-29",
+        "drawdown_pct": -6.54
+      },
+      {
+        "date": "2024-10-30",
+        "drawdown_pct": -8.43
+      },
+      {
+        "date": "2024-10-31",
+        "drawdown_pct": -10.71
+      },
+      {
+        "date": "2024-11-01",
+        "drawdown_pct": -10.53
+      },
+      {
+        "date": "2024-11-04",
+        "drawdown_pct": -10.39
+      },
+      {
+        "date": "2024-11-05",
+        "drawdown_pct": -10.87
+      },
+      {
+        "date": "2024-11-06",
+        "drawdown_pct": -7.34
+      },
+      {
+        "date": "2024-11-07",
+        "drawdown_pct": -8.39
+      },
+      {
+        "date": "2024-11-08",
+        "drawdown_pct": -7.02
+      },
+      {
+        "date": "2024-11-11",
+        "drawdown_pct": -5.49
+      },
+      {
+        "date": "2024-11-12",
+        "drawdown_pct": -5.05
+      },
+      {
+        "date": "2024-11-13",
+        "drawdown_pct": -5.07
+      },
+      {
+        "date": "2024-11-14",
+        "drawdown_pct": -5.26
+      },
+      {
+        "date": "2024-11-18",
+        "drawdown_pct": -7.96
+      },
+      {
+        "date": "2024-11-19",
+        "drawdown_pct": -7.28
+      },
+      {
+        "date": "2024-11-21",
+        "drawdown_pct": -6.81
+      },
+      {
+        "date": "2024-11-22",
+        "drawdown_pct": -3.35
+      },
+      {
+        "date": "2024-11-25",
+        "drawdown_pct": -3.98
+      },
+      {
+        "date": "2024-11-26",
+        "drawdown_pct": -2.23
+      },
+      {
+        "date": "2024-11-27",
+        "drawdown_pct": -2.22
+      },
+      {
+        "date": "2024-11-28",
+        "drawdown_pct": -5.66
+      },
+      {
+        "date": "2024-11-29",
+        "drawdown_pct": -5.6
+      },
+      {
+        "date": "2024-12-02",
+        "drawdown_pct": -4.49
+      },
+      {
+        "date": "2024-12-03",
+        "drawdown_pct": -3.86
+      },
+      {
+        "date": "2024-12-04",
+        "drawdown_pct": -4.01
+      },
+      {
+        "date": "2024-12-05",
+        "drawdown_pct": -1.69
+      },
+      {
+        "date": "2024-12-06",
+        "drawdown_pct": -2.32
+      },
+      {
+        "date": "2024-12-09",
+        "drawdown_pct": -2.26
+      },
+      {
+        "date": "2024-12-10",
+        "drawdown_pct": -0.99
+      },
+      {
+        "date": "2024-12-11",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-12",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-13",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-16",
+        "drawdown_pct": -0.98
+      },
+      {
+        "date": "2024-12-17",
+        "drawdown_pct": -1.16
+      },
+      {
+        "date": "2024-12-18",
+        "drawdown_pct": -1.03
+      },
+      {
+        "date": "2024-12-19",
+        "drawdown_pct": -2.68
+      },
+      {
+        "date": "2024-12-20",
+        "drawdown_pct": -3.88
+      },
+      {
+        "date": "2024-12-23",
+        "drawdown_pct": -3.77
+      },
+      {
+        "date": "2024-12-24",
+        "drawdown_pct": -4.53
+      },
+      {
+        "date": "2024-12-26",
+        "drawdown_pct": -4.62
+      },
+      {
+        "date": "2024-12-27",
+        "drawdown_pct": -4.15
+      },
+      {
+        "date": "2024-12-30",
+        "drawdown_pct": -4.69
+      }
+    ]
+  },
+  "HDFCBANK": {
+    "symbol": "HDFCBANK",
+    "annualized_volatility": 25.04,
+    "rolling_volatility_21d": 15.07,
+    "rolling_volatility_63d": 20.5,
+    "annualized_return_1y": 9.78,
+    "max_drawdown_pct": 41.05,
+    "drawdown_peak_date": "2019-12-23",
+    "drawdown_trough_date": "2020-03-24",
+    "sharpe_ratio": 0.25,
+    "sortino_ratio": 0.36,
+    "beta_vs_nifty50": 1.05,
+    "jensens_alpha_pct": -1.51,
+    "risk_free_rate_used": 6.5,
+    "var_cvar": {
+      "95%": {
+        "historical_var_1d": 2.21,
+        "historical_cvar_1d": 3.58,
+        "parametric_var_1d": 2.54,
+        "cornish_fisher_var_1d": 2.21,
+        "historical_var_10d": 6.98
+      },
+      "99%": {
+        "historical_var_1d": 3.84,
+        "historical_cvar_1d": 6.35,
+        "parametric_var_1d": 3.62,
+        "cornish_fisher_var_1d": 7.0,
+        "historical_var_10d": 12.14
+      }
+    },
+    "rolling_drawdowns": [
+      {
+        "date": "2024-10-03",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-04",
+        "drawdown_pct": -1.45
+      },
+      {
+        "date": "2024-10-07",
+        "drawdown_pct": -3.82
+      },
+      {
+        "date": "2024-10-08",
+        "drawdown_pct": -1.84
+      },
+      {
+        "date": "2024-10-09",
+        "drawdown_pct": -2.9
+      },
+      {
+        "date": "2024-10-10",
+        "drawdown_pct": -1.17
+      },
+      {
+        "date": "2024-10-11",
+        "drawdown_pct": -1.84
+      },
+      {
+        "date": "2024-10-14",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-15",
+        "drawdown_pct": -0.24
+      },
+      {
+        "date": "2024-10-16",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-17",
+        "drawdown_pct": -1.57
+      },
+      {
+        "date": "2024-10-18",
+        "drawdown_pct": -1.06
+      },
+      {
+        "date": "2024-10-21",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-22",
+        "drawdown_pct": -0.82
+      },
+      {
+        "date": "2024-10-23",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-24",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-25",
+        "drawdown_pct": -0.36
+      },
+      {
+        "date": "2024-10-28",
+        "drawdown_pct": -0.88
+      },
+      {
+        "date": "2024-10-29",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-30",
+        "drawdown_pct": -0.98
+      },
+      {
+        "date": "2024-10-31",
+        "drawdown_pct": -0.92
+      },
+      {
+        "date": "2024-11-01",
+        "drawdown_pct": -0.83
+      },
+      {
+        "date": "2024-11-04",
+        "drawdown_pct": -2.15
+      },
+      {
+        "date": "2024-11-05",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-06",
+        "drawdown_pct": -0.15
+      },
+      {
+        "date": "2024-11-07",
+        "drawdown_pct": -0.64
+      },
+      {
+        "date": "2024-11-08",
+        "drawdown_pct": -0.19
+      },
+      {
+        "date": "2024-11-11",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-12",
+        "drawdown_pct": -2.72
+      },
+      {
+        "date": "2024-11-13",
+        "drawdown_pct": -4.81
+      },
+      {
+        "date": "2024-11-14",
+        "drawdown_pct": -4.16
+      },
+      {
+        "date": "2024-11-18",
+        "drawdown_pct": -3.46
+      },
+      {
+        "date": "2024-11-19",
+        "drawdown_pct": -1.36
+      },
+      {
+        "date": "2024-11-21",
+        "drawdown_pct": -1.42
+      },
+      {
+        "date": "2024-11-22",
+        "drawdown_pct": -1.17
+      },
+      {
+        "date": "2024-11-25",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-26",
+        "drawdown_pct": -0.0
+      },
+      {
+        "date": "2024-11-27",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-28",
+        "drawdown_pct": -1.06
+      },
+      {
+        "date": "2024-11-29",
+        "drawdown_pct": -0.9
+      },
+      {
+        "date": "2024-12-02",
+        "drawdown_pct": -0.42
+      },
+      {
+        "date": "2024-12-03",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-04",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-05",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-06",
+        "drawdown_pct": -0.53
+      },
+      {
+        "date": "2024-12-09",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-10",
+        "drawdown_pct": -0.1
+      },
+      {
+        "date": "2024-12-11",
+        "drawdown_pct": -0.37
+      },
+      {
+        "date": "2024-12-12",
+        "drawdown_pct": -0.57
+      },
+      {
+        "date": "2024-12-13",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-16",
+        "drawdown_pct": -0.35
+      },
+      {
+        "date": "2024-12-17",
+        "drawdown_pct": -2.06
+      },
+      {
+        "date": "2024-12-18",
+        "drawdown_pct": -3.26
+      },
+      {
+        "date": "2024-12-19",
+        "drawdown_pct": -4.18
+      },
+      {
+        "date": "2024-12-20",
+        "drawdown_pct": -5.36
+      },
+      {
+        "date": "2024-12-23",
+        "drawdown_pct": -3.78
+      },
+      {
+        "date": "2024-12-24",
+        "drawdown_pct": -3.93
+      },
+      {
+        "date": "2024-12-26",
+        "drawdown_pct": -4.33
+      },
+      {
+        "date": "2024-12-27",
+        "drawdown_pct": -3.93
+      },
+      {
+        "date": "2024-12-30",
+        "drawdown_pct": -5.01
+      }
+    ]
+  },
+  "ICICIBANK": {
+    "symbol": "ICICIBANK",
+    "annualized_volatility": 31.23,
+    "rolling_volatility_21d": 14.12,
+    "rolling_volatility_63d": 19.36,
+    "annualized_return_1y": 26.42,
+    "max_drawdown_pct": 48.31,
+    "drawdown_peak_date": "2019-12-27",
+    "drawdown_trough_date": "2020-03-23",
+    "sharpe_ratio": 0.62,
+    "sortino_ratio": 0.91,
+    "beta_vs_nifty50": 1.31,
+    "jensens_alpha_pct": 9.73,
+    "risk_free_rate_used": 6.5,
+    "var_cvar": {
+      "95%": {
+        "historical_var_1d": 2.65,
+        "historical_cvar_1d": 4.36,
+        "parametric_var_1d": 3.13,
+        "cornish_fisher_var_1d": 2.69,
+        "historical_var_10d": 8.37
+      },
+      "99%": {
+        "historical_var_1d": 4.99,
+        "historical_cvar_1d": 7.83,
+        "parametric_var_1d": 4.47,
+        "cornish_fisher_var_1d": 8.74,
+        "historical_var_10d": 15.79
+      }
+    },
+    "rolling_drawdowns": [
+      {
+        "date": "2024-10-03",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-04",
+        "drawdown_pct": -1.32
+      },
+      {
+        "date": "2024-10-07",
+        "drawdown_pct": -1.79
+      },
+      {
+        "date": "2024-10-08",
+        "drawdown_pct": -1.57
+      },
+      {
+        "date": "2024-10-09",
+        "drawdown_pct": -0.97
+      },
+      {
+        "date": "2024-10-10",
+        "drawdown_pct": -1.02
+      },
+      {
+        "date": "2024-10-11",
+        "drawdown_pct": -2.65
+      },
+      {
+        "date": "2024-10-14",
+        "drawdown_pct": -1.96
+      },
+      {
+        "date": "2024-10-15",
+        "drawdown_pct": -0.07
+      },
+      {
+        "date": "2024-10-16",
+        "drawdown_pct": -1.05
+      },
+      {
+        "date": "2024-10-17",
+        "drawdown_pct": -2.0
+      },
+      {
+        "date": "2024-10-18",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-21",
+        "drawdown_pct": -0.43
+      },
+      {
+        "date": "2024-10-22",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-23",
+        "drawdown_pct": -1.25
+      },
+      {
+        "date": "2024-10-24",
+        "drawdown_pct": -1.16
+      },
+      {
+        "date": "2024-10-25",
+        "drawdown_pct": -0.95
+      },
+      {
+        "date": "2024-10-28",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-29",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-30",
+        "drawdown_pct": -1.48
+      },
+      {
+        "date": "2024-10-31",
+        "drawdown_pct": -2.97
+      },
+      {
+        "date": "2024-11-01",
+        "drawdown_pct": -3.01
+      },
+      {
+        "date": "2024-11-04",
+        "drawdown_pct": -4.1
+      },
+      {
+        "date": "2024-11-05",
+        "drawdown_pct": -2.64
+      },
+      {
+        "date": "2024-11-06",
+        "drawdown_pct": -2.21
+      },
+      {
+        "date": "2024-11-07",
+        "drawdown_pct": -3.99
+      },
+      {
+        "date": "2024-11-08",
+        "drawdown_pct": -5.48
+      },
+      {
+        "date": "2024-11-11",
+        "drawdown_pct": -4.7
+      },
+      {
+        "date": "2024-11-12",
+        "drawdown_pct": -4.6
+      },
+      {
+        "date": "2024-11-13",
+        "drawdown_pct": -5.87
+      },
+      {
+        "date": "2024-11-14",
+        "drawdown_pct": -5.62
+      },
+      {
+        "date": "2024-11-18",
+        "drawdown_pct": -5.89
+      },
+      {
+        "date": "2024-11-19",
+        "drawdown_pct": -6.21
+      },
+      {
+        "date": "2024-11-21",
+        "drawdown_pct": -6.1
+      },
+      {
+        "date": "2024-11-22",
+        "drawdown_pct": -4.04
+      },
+      {
+        "date": "2024-11-25",
+        "drawdown_pct": -2.32
+      },
+      {
+        "date": "2024-11-26",
+        "drawdown_pct": -2.02
+      },
+      {
+        "date": "2024-11-27",
+        "drawdown_pct": -2.34
+      },
+      {
+        "date": "2024-11-28",
+        "drawdown_pct": -3.42
+      },
+      {
+        "date": "2024-11-29",
+        "drawdown_pct": -2.38
+      },
+      {
+        "date": "2024-12-02",
+        "drawdown_pct": -2.04
+      },
+      {
+        "date": "2024-12-03",
+        "drawdown_pct": -1.76
+      },
+      {
+        "date": "2024-12-04",
+        "drawdown_pct": -1.19
+      },
+      {
+        "date": "2024-12-05",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-06",
+        "drawdown_pct": -0.58
+      },
+      {
+        "date": "2024-12-09",
+        "drawdown_pct": -1.06
+      },
+      {
+        "date": "2024-12-10",
+        "drawdown_pct": -0.45
+      },
+      {
+        "date": "2024-12-11",
+        "drawdown_pct": -0.67
+      },
+      {
+        "date": "2024-12-12",
+        "drawdown_pct": -0.54
+      },
+      {
+        "date": "2024-12-13",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-16",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-17",
+        "drawdown_pct": -0.92
+      },
+      {
+        "date": "2024-12-18",
+        "drawdown_pct": -2.37
+      },
+      {
+        "date": "2024-12-19",
+        "drawdown_pct": -4.4
+      },
+      {
+        "date": "2024-12-20",
+        "drawdown_pct": -4.29
+      },
+      {
+        "date": "2024-12-23",
+        "drawdown_pct": -3.66
+      },
+      {
+        "date": "2024-12-24",
+        "drawdown_pct": -3.63
+      },
+      {
+        "date": "2024-12-26",
+        "drawdown_pct": -3.62
+      },
+      {
+        "date": "2024-12-27",
+        "drawdown_pct": -2.86
+      },
+      {
+        "date": "2024-12-30",
+        "drawdown_pct": -3.82
+      }
+    ]
+  },
+  "SBIN": {
+    "symbol": "SBIN",
+    "annualized_volatility": 33.13,
+    "rolling_volatility_21d": 17.64,
+    "rolling_volatility_63d": 25.59,
+    "annualized_return_1y": 22.81,
+    "max_drawdown_pct": 59.49,
+    "drawdown_peak_date": "2019-07-17",
+    "drawdown_trough_date": "2020-05-22",
+    "sharpe_ratio": 0.39,
+    "sortino_ratio": 0.56,
+    "beta_vs_nifty50": 1.28,
+    "jensens_alpha_pct": 3.42,
+    "risk_free_rate_used": 6.5,
+    "var_cvar": {
+      "95%": {
+        "historical_var_1d": 3.16,
+        "historical_cvar_1d": 4.76,
+        "parametric_var_1d": 3.36,
+        "cornish_fisher_var_1d": 3.04,
+        "historical_var_10d": 9.98
+      },
+      "99%": {
+        "historical_var_1d": 5.45,
+        "historical_cvar_1d": 7.53,
+        "parametric_var_1d": 4.78,
+        "cornish_fisher_var_1d": 7.53,
+        "historical_var_10d": 17.25
+      }
+    },
+    "rolling_drawdowns": [
+      {
+        "date": "2024-10-03",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-04",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-07",
+        "drawdown_pct": -3.26
+      },
+      {
+        "date": "2024-10-08",
+        "drawdown_pct": -1.91
+      },
+      {
+        "date": "2024-10-09",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-10",
+        "drawdown_pct": -0.04
+      },
+      {
+        "date": "2024-10-11",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-14",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-15",
+        "drawdown_pct": -0.06
+      },
+      {
+        "date": "2024-10-16",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-17",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-18",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-21",
+        "drawdown_pct": -0.79
+      },
+      {
+        "date": "2024-10-22",
+        "drawdown_pct": -3.66
+      },
+      {
+        "date": "2024-10-23",
+        "drawdown_pct": -4.19
+      },
+      {
+        "date": "2024-10-24",
+        "drawdown_pct": -3.15
+      },
+      {
+        "date": "2024-10-25",
+        "drawdown_pct": -4.81
+      },
+      {
+        "date": "2024-10-28",
+        "drawdown_pct": -3.46
+      },
+      {
+        "date": "2024-10-29",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-30",
+        "drawdown_pct": -1.23
+      },
+      {
+        "date": "2024-10-31",
+        "drawdown_pct": -1.5
+      },
+      {
+        "date": "2024-11-01",
+        "drawdown_pct": -1.38
+      },
+      {
+        "date": "2024-11-04",
+        "drawdown_pct": -0.34
+      },
+      {
+        "date": "2024-11-05",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-06",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-07",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-08",
+        "drawdown_pct": -1.91
+      },
+      {
+        "date": "2024-11-11",
+        "drawdown_pct": -1.39
+      },
+      {
+        "date": "2024-11-12",
+        "drawdown_pct": -3.83
+      },
+      {
+        "date": "2024-11-13",
+        "drawdown_pct": -5.93
+      },
+      {
+        "date": "2024-11-14",
+        "drawdown_pct": -6.44
+      },
+      {
+        "date": "2024-11-18",
+        "drawdown_pct": -5.27
+      },
+      {
+        "date": "2024-11-19",
+        "drawdown_pct": -6.58
+      },
+      {
+        "date": "2024-11-21",
+        "drawdown_pct": -9.17
+      },
+      {
+        "date": "2024-11-22",
+        "drawdown_pct": -5.07
+      },
+      {
+        "date": "2024-11-25",
+        "drawdown_pct": -1.76
+      },
+      {
+        "date": "2024-11-26",
+        "drawdown_pct": -2.35
+      },
+      {
+        "date": "2024-11-27",
+        "drawdown_pct": -2.97
+      },
+      {
+        "date": "2024-11-28",
+        "drawdown_pct": -2.41
+      },
+      {
+        "date": "2024-11-29",
+        "drawdown_pct": -2.4
+      },
+      {
+        "date": "2024-12-02",
+        "drawdown_pct": -2.7
+      },
+      {
+        "date": "2024-12-03",
+        "drawdown_pct": -0.66
+      },
+      {
+        "date": "2024-12-04",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-05",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-06",
+        "drawdown_pct": -0.21
+      },
+      {
+        "date": "2024-12-09",
+        "drawdown_pct": -0.86
+      },
+      {
+        "date": "2024-12-10",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-11",
+        "drawdown_pct": -0.68
+      },
+      {
+        "date": "2024-12-12",
+        "drawdown_pct": -1.59
+      },
+      {
+        "date": "2024-12-13",
+        "drawdown_pct": -0.69
+      },
+      {
+        "date": "2024-12-16",
+        "drawdown_pct": -0.76
+      },
+      {
+        "date": "2024-12-17",
+        "drawdown_pct": -1.95
+      },
+      {
+        "date": "2024-12-18",
+        "drawdown_pct": -3.38
+      },
+      {
+        "date": "2024-12-19",
+        "drawdown_pct": -4.0
+      },
+      {
+        "date": "2024-12-20",
+        "drawdown_pct": -6.4
+      },
+      {
+        "date": "2024-12-23",
+        "drawdown_pct": -5.34
+      },
+      {
+        "date": "2024-12-24",
+        "drawdown_pct": -6.39
+      },
+      {
+        "date": "2024-12-26",
+        "drawdown_pct": -6.35
+      },
+      {
+        "date": "2024-12-27",
+        "drawdown_pct": -7.82
+      },
+      {
+        "date": "2024-12-30",
+        "drawdown_pct": -9.13
+      }
+    ]
+  },
+  "ITC": {
+    "symbol": "ITC",
+    "annualized_volatility": 24.71,
+    "rolling_volatility_21d": 14.31,
+    "rolling_volatility_63d": 17.29,
+    "annualized_return_1y": 6.32,
+    "max_drawdown_pct": 53.96,
+    "drawdown_peak_date": "2018-08-30",
+    "drawdown_trough_date": "2020-03-16",
+    "sharpe_ratio": 0.22,
+    "sortino_ratio": 0.32,
+    "beta_vs_nifty50": 0.69,
+    "jensens_alpha_pct": 0.27,
+    "risk_free_rate_used": 6.5,
+    "var_cvar": {
+      "95%": {
+        "historical_var_1d": 2.07,
+        "historical_cvar_1d": 3.43,
+        "parametric_var_1d": 2.51,
+        "cornish_fisher_var_1d": 2.09,
+        "historical_var_10d": 6.56
+      },
+      "99%": {
+        "historical_var_1d": 3.82,
+        "historical_cvar_1d": 6.08,
+        "parametric_var_1d": 3.57,
+        "cornish_fisher_var_1d": 6.3,
+        "historical_var_10d": 12.09
+      }
+    },
+    "rolling_drawdowns": [
+      {
+        "date": "2024-10-03",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-04",
+        "drawdown_pct": -1.79
+      },
+      {
+        "date": "2024-10-07",
+        "drawdown_pct": -0.5
+      },
+      {
+        "date": "2024-10-08",
+        "drawdown_pct": -0.94
+      },
+      {
+        "date": "2024-10-09",
+        "drawdown_pct": -4.11
+      },
+      {
+        "date": "2024-10-10",
+        "drawdown_pct": -4.04
+      },
+      {
+        "date": "2024-10-11",
+        "drawdown_pct": -4.79
+      },
+      {
+        "date": "2024-10-14",
+        "drawdown_pct": -3.08
+      },
+      {
+        "date": "2024-10-15",
+        "drawdown_pct": -2.77
+      },
+      {
+        "date": "2024-10-16",
+        "drawdown_pct": -3.81
+      },
+      {
+        "date": "2024-10-17",
+        "drawdown_pct": -4.65
+      },
+      {
+        "date": "2024-10-18",
+        "drawdown_pct": -5.08
+      },
+      {
+        "date": "2024-10-21",
+        "drawdown_pct": -5.68
+      },
+      {
+        "date": "2024-10-22",
+        "drawdown_pct": -6.04
+      },
+      {
+        "date": "2024-10-23",
+        "drawdown_pct": -6.32
+      },
+      {
+        "date": "2024-10-24",
+        "drawdown_pct": -8.01
+      },
+      {
+        "date": "2024-10-25",
+        "drawdown_pct": -5.94
+      },
+      {
+        "date": "2024-10-28",
+        "drawdown_pct": -5.58
+      },
+      {
+        "date": "2024-10-29",
+        "drawdown_pct": -4.84
+      },
+      {
+        "date": "2024-10-30",
+        "drawdown_pct": -4.13
+      },
+      {
+        "date": "2024-10-31",
+        "drawdown_pct": -4.67
+      },
+      {
+        "date": "2024-11-01",
+        "drawdown_pct": -4.38
+      },
+      {
+        "date": "2024-11-04",
+        "drawdown_pct": -5.49
+      },
+      {
+        "date": "2024-11-05",
+        "drawdown_pct": -6.35
+      },
+      {
+        "date": "2024-11-06",
+        "drawdown_pct": -6.17
+      },
+      {
+        "date": "2024-11-07",
+        "drawdown_pct": -6.8
+      },
+      {
+        "date": "2024-11-08",
+        "drawdown_pct": -6.77
+      },
+      {
+        "date": "2024-11-11",
+        "drawdown_pct": -6.98
+      },
+      {
+        "date": "2024-11-12",
+        "drawdown_pct": -7.78
+      },
+      {
+        "date": "2024-11-13",
+        "drawdown_pct": -7.91
+      },
+      {
+        "date": "2024-11-14",
+        "drawdown_pct": -9.13
+      },
+      {
+        "date": "2024-11-18",
+        "drawdown_pct": -9.01
+      },
+      {
+        "date": "2024-11-19",
+        "drawdown_pct": -8.85
+      },
+      {
+        "date": "2024-11-21",
+        "drawdown_pct": -10.84
+      },
+      {
+        "date": "2024-11-22",
+        "drawdown_pct": -7.43
+      },
+      {
+        "date": "2024-11-25",
+        "drawdown_pct": -7.01
+      },
+      {
+        "date": "2024-11-26",
+        "drawdown_pct": -6.97
+      },
+      {
+        "date": "2024-11-27",
+        "drawdown_pct": -6.98
+      },
+      {
+        "date": "2024-11-28",
+        "drawdown_pct": -7.38
+      },
+      {
+        "date": "2024-11-29",
+        "drawdown_pct": -7.02
+      },
+      {
+        "date": "2024-12-02",
+        "drawdown_pct": -6.93
+      },
+      {
+        "date": "2024-12-03",
+        "drawdown_pct": -7.84
+      },
+      {
+        "date": "2024-12-04",
+        "drawdown_pct": -8.9
+      },
+      {
+        "date": "2024-12-05",
+        "drawdown_pct": -8.82
+      },
+      {
+        "date": "2024-12-06",
+        "drawdown_pct": -8.11
+      },
+      {
+        "date": "2024-12-09",
+        "drawdown_pct": -9.32
+      },
+      {
+        "date": "2024-12-10",
+        "drawdown_pct": -9.22
+      },
+      {
+        "date": "2024-12-11",
+        "drawdown_pct": -9.26
+      },
+      {
+        "date": "2024-12-12",
+        "drawdown_pct": -10.17
+      },
+      {
+        "date": "2024-12-13",
+        "drawdown_pct": -8.34
+      },
+      {
+        "date": "2024-12-16",
+        "drawdown_pct": -8.32
+      },
+      {
+        "date": "2024-12-17",
+        "drawdown_pct": -8.43
+      },
+      {
+        "date": "2024-12-18",
+        "drawdown_pct": -8.24
+      },
+      {
+        "date": "2024-12-19",
+        "drawdown_pct": -9.01
+      },
+      {
+        "date": "2024-12-20",
+        "drawdown_pct": -9.38
+      },
+      {
+        "date": "2024-12-23",
+        "drawdown_pct": -7.51
+      },
+      {
+        "date": "2024-12-24",
+        "drawdown_pct": -6.69
+      },
+      {
+        "date": "2024-12-26",
+        "drawdown_pct": -6.98
+      },
+      {
+        "date": "2024-12-27",
+        "drawdown_pct": -6.66
+      },
+      {
+        "date": "2024-12-30",
+        "drawdown_pct": -6.97
+      }
+    ]
+  },
+  "LT": {
+    "symbol": "LT",
+    "annualized_volatility": 27.44,
+    "rolling_volatility_21d": 19.41,
+    "rolling_volatility_63d": 26.05,
+    "annualized_return_1y": 6.25,
+    "max_drawdown_pct": 55.65,
+    "drawdown_peak_date": "2019-05-27",
+    "drawdown_trough_date": "2020-03-24",
+    "sharpe_ratio": 0.46,
+    "sortino_ratio": 0.67,
+    "beta_vs_nifty50": 1.06,
+    "jensens_alpha_pct": 4.79,
+    "risk_free_rate_used": 6.5,
+    "var_cvar": {
+      "95%": {
+        "historical_var_1d": 2.29,
+        "historical_cvar_1d": 3.7,
+        "parametric_var_1d": 2.77,
+        "cornish_fisher_var_1d": 2.28,
+        "historical_var_10d": 7.25
+      },
+      "99%": {
+        "historical_var_1d": 4.26,
+        "historical_cvar_1d": 6.61,
+        "parametric_var_1d": 3.95,
+        "cornish_fisher_var_1d": 7.21,
+        "historical_var_10d": 13.47
+      }
+    },
+    "rolling_drawdowns": [
+      {
+        "date": "2024-10-03",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-04",
+        "drawdown_pct": -0.11
+      },
+      {
+        "date": "2024-10-07",
+        "drawdown_pct": -0.84
+      },
+      {
+        "date": "2024-10-08",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-09",
+        "drawdown_pct": -1.28
+      },
+      {
+        "date": "2024-10-10",
+        "drawdown_pct": -2.04
+      },
+      {
+        "date": "2024-10-11",
+        "drawdown_pct": -1.41
+      },
+      {
+        "date": "2024-10-14",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-15",
+        "drawdown_pct": -0.09
+      },
+      {
+        "date": "2024-10-16",
+        "drawdown_pct": -0.63
+      },
+      {
+        "date": "2024-10-17",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-18",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-21",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-22",
+        "drawdown_pct": -2.06
+      },
+      {
+        "date": "2024-10-23",
+        "drawdown_pct": -3.63
+      },
+      {
+        "date": "2024-10-24",
+        "drawdown_pct": -3.99
+      },
+      {
+        "date": "2024-10-25",
+        "drawdown_pct": -7.23
+      },
+      {
+        "date": "2024-10-28",
+        "drawdown_pct": -6.83
+      },
+      {
+        "date": "2024-10-29",
+        "drawdown_pct": -5.71
+      },
+      {
+        "date": "2024-10-30",
+        "drawdown_pct": -4.94
+      },
+      {
+        "date": "2024-10-31",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-01",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-04",
+        "drawdown_pct": -1.43
+      },
+      {
+        "date": "2024-11-05",
+        "drawdown_pct": -1.42
+      },
+      {
+        "date": "2024-11-06",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-07",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-08",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-11",
+        "drawdown_pct": -0.86
+      },
+      {
+        "date": "2024-11-12",
+        "drawdown_pct": -1.88
+      },
+      {
+        "date": "2024-11-13",
+        "drawdown_pct": -3.07
+      },
+      {
+        "date": "2024-11-14",
+        "drawdown_pct": -3.66
+      },
+      {
+        "date": "2024-11-18",
+        "drawdown_pct": -3.23
+      },
+      {
+        "date": "2024-11-19",
+        "drawdown_pct": -4.22
+      },
+      {
+        "date": "2024-11-21",
+        "drawdown_pct": -4.83
+      },
+      {
+        "date": "2024-11-22",
+        "drawdown_pct": -1.55
+      },
+      {
+        "date": "2024-11-25",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-11-26",
+        "drawdown_pct": -1.34
+      },
+      {
+        "date": "2024-11-27",
+        "drawdown_pct": -1.45
+      },
+      {
+        "date": "2024-11-28",
+        "drawdown_pct": -2.32
+      },
+      {
+        "date": "2024-11-29",
+        "drawdown_pct": -0.75
+      },
+      {
+        "date": "2024-12-02",
+        "drawdown_pct": -1.3
+      },
+      {
+        "date": "2024-12-03",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-04",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-05",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-06",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-09",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-12-10",
+        "drawdown_pct": -0.61
+      },
+      {
+        "date": "2024-12-11",
+        "drawdown_pct": -0.77
+      },
+      {
+        "date": "2024-12-12",
+        "drawdown_pct": -2.21
+      },
+      {
+        "date": "2024-12-13",
+        "drawdown_pct": -1.53
+      },
+      {
+        "date": "2024-12-16",
+        "drawdown_pct": -1.76
+      },
+      {
+        "date": "2024-12-17",
+        "drawdown_pct": -3.55
+      },
+      {
+        "date": "2024-12-18",
+        "drawdown_pct": -4.79
+      },
+      {
+        "date": "2024-12-19",
+        "drawdown_pct": -5.85
+      },
+      {
+        "date": "2024-12-20",
+        "drawdown_pct": -8.04
+      },
+      {
+        "date": "2024-12-23",
+        "drawdown_pct": -7.77
+      },
+      {
+        "date": "2024-12-24",
+        "drawdown_pct": -7.79
+      },
+      {
+        "date": "2024-12-26",
+        "drawdown_pct": -8.05
+      },
+      {
+        "date": "2024-12-27",
+        "drawdown_pct": -8.59
+      },
+      {
+        "date": "2024-12-30",
+        "drawdown_pct": -9.33
+      }
+    ]
+  },
+  "AXISBANK": {
+    "symbol": "AXISBANK",
+    "annualized_volatility": 34.5,
+    "rolling_volatility_21d": 18.36,
+    "rolling_volatility_63d": 24.19,
+    "annualized_return_1y": -1.58,
+    "max_drawdown_pct": 63.16,
+    "drawdown_peak_date": "2019-06-04",
+    "drawdown_trough_date": "2020-03-24",
+    "sharpe_ratio": 0.26,
+    "sortino_ratio": 0.37,
+    "beta_vs_nifty50": 1.35,
+    "jensens_alpha_pct": -1.0,
+    "risk_free_rate_used": 6.5,
+    "var_cvar": {
+      "95%": {
+        "historical_var_1d": 2.92,
+        "historical_cvar_1d": 4.76,
+        "parametric_var_1d": 3.51,
+        "cornish_fisher_var_1d": 2.08,
+        "historical_var_10d": 9.24
+      },
+      "99%": {
+        "historical_var_1d": 5.23,
+        "historical_cvar_1d": 8.67,
+        "parametric_var_1d": 4.99,
+        "cornish_fisher_var_1d": 15.21,
+        "historical_var_10d": 16.52
+      }
+    },
+    "rolling_drawdowns": [
+      {
+        "date": "2024-10-03",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-04",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-07",
+        "drawdown_pct": -2.77
+      },
+      {
+        "date": "2024-10-08",
+        "drawdown_pct": -2.13
+      },
+      {
+        "date": "2024-10-09",
+        "drawdown_pct": -0.7
+      },
+      {
+        "date": "2024-10-10",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-11",
+        "drawdown_pct": -1.0
+      },
+      {
+        "date": "2024-10-14",
+        "drawdown_pct": -1.68
+      },
+      {
+        "date": "2024-10-15",
+        "drawdown_pct": -2.57
+      },
+      {
+        "date": "2024-10-16",
+        "drawdown_pct": -2.62
+      },
+      {
+        "date": "2024-10-17",
+        "drawdown_pct": -4.42
+      },
+      {
+        "date": "2024-10-18",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-21",
+        "drawdown_pct": -0.55
+      },
+      {
+        "date": "2024-10-22",
+        "drawdown_pct": -1.76
+      },
+      {
+        "date": "2024-10-23",
+        "drawdown_pct": -3.05
+      },
+      {
+        "date": "2024-10-24",
+        "drawdown_pct": -2.46
+      },
+      {
+        "date": "2024-10-25",
+        "drawdown_pct": -0.63
+      },
+      {
+        "date": "2024-10-28",
+        "drawdown_pct": -2.11
+      },
+      {
+        "date": "2024-10-29",
+        "drawdown_pct": -0.84
+      },
+      {
+        "date": "2024-10-30",
+        "drawdown_pct": -2.21
+      },
+      {
+        "date": "2024-10-31",
+        "drawdown_pct": -3.12
+      },
+      {
+        "date": "2024-11-01",
+        "drawdown_pct": -2.28
+      },
+      {
+        "date": "2024-11-04",
+        "drawdown_pct": -4.81
+      },
+      {
+        "date": "2024-11-05",
+        "drawdown_pct": -2.1
+      },
+      {
+        "date": "2024-11-06",
+        "drawdown_pct": -2.54
+      },
+      {
+        "date": "2024-11-07",
+        "drawdown_pct": -3.09
+      },
+      {
+        "date": "2024-11-08",
+        "drawdown_pct": -3.0
+      },
+      {
+        "date": "2024-11-11",
+        "drawdown_pct": -2.16
+      },
+      {
+        "date": "2024-11-12",
+        "drawdown_pct": -3.23
+      },
+      {
+        "date": "2024-11-13",
+        "drawdown_pct": -4.82
+      },
+      {
+        "date": "2024-11-14",
+        "drawdown_pct": -4.69
+      },
+      {
+        "date": "2024-11-18",
+        "drawdown_pct": -5.9
+      },
+      {
+        "date": "2024-11-19",
+        "drawdown_pct": -5.26
+      },
+      {
+        "date": "2024-11-21",
+        "drawdown_pct": -4.82
+      },
+      {
+        "date": "2024-11-22",
+        "drawdown_pct": -4.55
+      },
+      {
+        "date": "2024-11-25",
+        "drawdown_pct": -3.42
+      },
+      {
+        "date": "2024-11-26",
+        "drawdown_pct": -4.35
+      },
+      {
+        "date": "2024-11-27",
+        "drawdown_pct": -3.94
+      },
+      {
+        "date": "2024-11-28",
+        "drawdown_pct": -5.38
+      },
+      {
+        "date": "2024-11-29",
+        "drawdown_pct": -5.06
+      },
+      {
+        "date": "2024-12-02",
+        "drawdown_pct": -4.99
+      },
+      {
+        "date": "2024-12-03",
+        "drawdown_pct": -3.04
+      },
+      {
+        "date": "2024-12-04",
+        "drawdown_pct": -3.12
+      },
+      {
+        "date": "2024-12-05",
+        "drawdown_pct": -2.54
+      },
+      {
+        "date": "2024-12-06",
+        "drawdown_pct": -1.03
+      },
+      {
+        "date": "2024-12-09",
+        "drawdown_pct": -2.81
+      },
+      {
+        "date": "2024-12-10",
+        "drawdown_pct": -3.61
+      },
+      {
+        "date": "2024-12-11",
+        "drawdown_pct": -4.14
+      },
+      {
+        "date": "2024-12-12",
+        "drawdown_pct": -4.28
+      },
+      {
+        "date": "2024-12-13",
+        "drawdown_pct": -4.07
+      },
+      {
+        "date": "2024-12-16",
+        "drawdown_pct": -3.84
+      },
+      {
+        "date": "2024-12-17",
+        "drawdown_pct": -5.06
+      },
+      {
+        "date": "2024-12-18",
+        "drawdown_pct": -6.23
+      },
+      {
+        "date": "2024-12-19",
+        "drawdown_pct": -7.35
+      },
+      {
+        "date": "2024-12-20",
+        "drawdown_pct": -10.44
+      },
+      {
+        "date": "2024-12-23",
+        "drawdown_pct": -9.83
+      },
+      {
+        "date": "2024-12-24",
+        "drawdown_pct": -9.86
+      },
+      {
+        "date": "2024-12-26",
+        "drawdown_pct": -10.04
+      },
+      {
+        "date": "2024-12-27",
+        "drawdown_pct": -9.98
+      },
+      {
+        "date": "2024-12-30",
+        "drawdown_pct": -10.6
+      }
+    ]
+  },
+  "BHARTIARTL": {
+    "symbol": "BHARTIARTL",
+    "annualized_volatility": 30.53,
+    "rolling_volatility_21d": 29.63,
+    "rolling_volatility_63d": 21.69,
+    "annualized_return_1y": 50.1,
+    "max_drawdown_pct": 47.16,
+    "drawdown_peak_date": "2018-01-05",
+    "drawdown_trough_date": "2018-10-11",
+    "sharpe_ratio": 0.52,
+    "sortino_ratio": 0.8,
+    "beta_vs_nifty50": 0.83,
+    "jensens_alpha_pct": 9.66,
+    "risk_free_rate_used": 6.5,
+    "var_cvar": {
+      "95%": {
+        "historical_var_1d": 2.82,
+        "historical_cvar_1d": 4.05,
+        "parametric_var_1d": 3.07,
+        "cornish_fisher_var_1d": 3.16,
+        "historical_var_10d": 8.9
+      },
+      "99%": {
+        "historical_var_1d": 4.59,
+        "historical_cvar_1d": 6.13,
+        "parametric_var_1d": 4.38,
+        "cornish_fisher_var_1d": 6.83,
+        "historical_var_10d": 14.52
+      }
+    },
+    "rolling_drawdowns": [
+      {
+        "date": "2024-10-03",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-04",
+        "drawdown_pct": -1.95
+      },
+      {
+        "date": "2024-10-07",
+        "drawdown_pct": -0.68
+      },
+      {
+        "date": "2024-10-08",
+        "drawdown_pct": -0.96
+      },
+      {
+        "date": "2024-10-09",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-10",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-11",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-14",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-15",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-16",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2024-10-17",
+        "drawdown_pct": -1.89
+      },
+      {
+        "date": "2024-10-18",
+        "drawdown_pct": -1.51
+      },
+      {
+        "date": "2024-10-21",
+        "drawdown_pct": -2.39
+      },
+      {
+        "date": "2024-10-22",
+        "drawdown_pct": -2.4
+      },
+      {
+        "date": "2024-10-23",
+        "drawdown_pct": -2.78
+      },
+      {
+        "date": "2024-10-24",
+        "drawdown_pct": -3.2
+      },
+      {
+        "date": "2024-10-25",
+        "drawdown_pct": -3.92
+      },
+      {
+        "date": "2024-10-28",
+        "drawdown_pct": -4.07
+      },
+      {
+        "date": "2024-10-29",
+        "drawdown_pct": -5.59
+      },
+      {
+        "date": "2024-10-30",
+        "drawdown_pct": -5.8
+      },
+      {
+        "date": "2024-10-31",
+        "drawdown_pct": -7.0
+      },
+      {
+        "date": "2024-11-01",
+        "drawdown_pct": -6.78
+      },
+      {
+        "date": "2024-11-04",
+        "drawdown_pct": -8.23
+      },
+      {
+        "date": "2024-11-05",
+        "drawdown_pct": -8.97
+      },
+      {
+        "date": "2024-11-06",
+        "drawdown_pct": -7.79
+      },
+      {
+        "date": "2024-11-07",
+        "drawdown_pct": -9.12
+      },
+      {
+        "date": "2024-11-08",
+        "drawdown_pct": -9.46
+      },
+      {
+        "date": "2024-11-11",
+        "drawdown_pct": -10.0
+      },
+      {
+        "date": "2024-11-12",
+        "drawdown_pct": -10.28
+      },
+      {
+        "date": "2024-11-13",
+        "drawdown_pct": -10.58
+      },
+      {
+        "date": "2024-11-14",
+        "drawdown_pct": -10.58
+      },
+      {
+        "date": "2024-11-18",
+        "drawdown_pct": -11.36
+      },
+      {
+        "date": "2024-11-19",
+        "drawdown_pct": -12.02
+      },
+      {
+        "date": "2024-11-21",
+        "drawdown_pct": -12.04
+      },
+      {
+        "date": "2024-11-22",
+        "drawdown_pct": -9.5
+      },
+      {
+        "date": "2024-11-25",
+        "drawdown_pct": -8.95
+      },
+      {
+        "date": "2024-11-26",
+        "drawdown_pct": -9.04
+      },
+      {
+        "date": "2024-11-27",
+        "drawdown_pct": -9.01
+      },
+      {
+        "date": "2024-11-28",
+        "drawdown_pct": -10.01
+      },
+      {
+        "date": "2024-11-29",
+        "drawdown_pct": -6.16
+      },
+      {
+        "date": "2024-12-02",
+        "drawdown_pct": -5.21
+      },
+      {
+        "date": "2024-12-03",
+        "drawdown_pct": -6.54
+      },
+      {
+        "date": "2024-12-04",
+        "drawdown_pct": -8.64
+      },
+      {
+        "date": "2024-12-05",
+        "drawdown_pct": -6.84
+      },
+      {
+        "date": "2024-12-06",
+        "drawdown_pct": -7.85
+      },
+      {
+        "date": "2024-12-09",
+        "drawdown_pct": -7.58
+      },
+      {
+        "date": "2024-12-10",
+        "drawdown_pct": -8.96
+      },
+      {
+        "date": "2024-12-11",
+        "drawdown_pct": -8.53
+      },
+      {
+        "date": "2024-12-12",
+        "drawdown_pct": -7.12
+      },
+      {
+        "date": "2024-12-13",
+        "drawdown_pct": -3.01
+      },
+      {
+        "date": "2024-12-16",
+        "drawdown_pct": -4.12
+      },
+      {
+        "date": "2024-12-17",
+        "drawdown_pct": -6.84
+      },
+      {
+        "date": "2024-12-18",
+        "drawdown_pct": -7.62
+      },
+      {
+        "date": "2024-12-19",
+        "drawdown_pct": -7.71
+      },
+      {
+        "date": "2024-12-20",
+        "drawdown_pct": -8.99
+      },
+      {
+        "date": "2024-12-23",
+        "drawdown_pct": -8.48
+      },
+      {
+        "date": "2024-12-24",
+        "drawdown_pct": -8.65
+      },
+      {
+        "date": "2024-12-26",
+        "drawdown_pct": -7.75
+      },
+      {
+        "date": "2024-12-27",
+        "drawdown_pct": -7.73
+      },
+      {
+        "date": "2024-12-30",
+        "drawdown_pct": -8.48
+      }
+    ]
+  },
+  "NIFTY_50": {
+    "symbol": "NIFTY_50",
+    "annualized_volatility": 17.54,
+    "rolling_volatility_21d": 18.18,
+    "rolling_volatility_63d": 17.15,
+    "annualized_return_1y": 13.71,
+    "max_drawdown_pct": 38.44,
+    "drawdown_peak_date": "2020-01-14",
+    "drawdown_trough_date": "2020-03-23",
+    "sharpe_ratio": 0.42,
+    "sortino_ratio": 0.57,
+    "beta_vs_nifty50": 1.0,
+    "jensens_alpha_pct": 0.0,
+    "risk_free_rate_used": 6.5,
+    "var_cvar": {
+      "95%": {
+        "historical_var_1d": 1.52,
+        "historical_cvar_1d": 2.58,
+        "parametric_var_1d": 1.76,
+        "cornish_fisher_var_1d": 0.96,
+        "historical_var_10d": 4.8
+      },
+      "99%": {
+        "historical_var_1d": 2.93,
+        "historical_cvar_1d": 4.95,
+        "parametric_var_1d": 2.52,
+        "cornish_fisher_var_1d": 5.86,
+        "historical_var_10d": 9.25
+      }
+    },
+    "rolling_drawdowns": [
+      {
+        "date": "2025-02-13",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-02-14",
+        "drawdown_pct": -0.44
+      },
+      {
+        "date": "2025-02-17",
+        "drawdown_pct": -0.31
+      },
+      {
+        "date": "2025-02-18",
+        "drawdown_pct": -0.37
+      },
+      {
+        "date": "2025-02-19",
+        "drawdown_pct": -0.43
+      },
+      {
+        "date": "2025-02-20",
+        "drawdown_pct": -0.51
+      },
+      {
+        "date": "2025-02-21",
+        "drawdown_pct": -1.02
+      },
+      {
+        "date": "2025-02-24",
+        "drawdown_pct": -2.08
+      },
+      {
+        "date": "2025-02-25",
+        "drawdown_pct": -2.1
+      },
+      {
+        "date": "2025-02-27",
+        "drawdown_pct": -2.11
+      },
+      {
+        "date": "2025-02-28",
+        "drawdown_pct": -3.94
+      },
+      {
+        "date": "2025-03-03",
+        "drawdown_pct": -3.96
+      },
+      {
+        "date": "2025-03-04",
+        "drawdown_pct": -4.12
+      },
+      {
+        "date": "2025-03-05",
+        "drawdown_pct": -3.01
+      },
+      {
+        "date": "2025-03-06",
+        "drawdown_pct": -2.11
+      },
+      {
+        "date": "2025-03-07",
+        "drawdown_pct": -2.08
+      },
+      {
+        "date": "2025-03-10",
+        "drawdown_pct": -2.48
+      },
+      {
+        "date": "2025-03-11",
+        "drawdown_pct": -2.32
+      },
+      {
+        "date": "2025-03-12",
+        "drawdown_pct": -2.44
+      },
+      {
+        "date": "2025-03-13",
+        "drawdown_pct": -2.75
+      },
+      {
+        "date": "2025-03-17",
+        "drawdown_pct": -2.27
+      },
+      {
+        "date": "2025-03-18",
+        "drawdown_pct": -0.86
+      },
+      {
+        "date": "2025-03-19",
+        "drawdown_pct": -0.54
+      },
+      {
+        "date": "2025-03-20",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-03-21",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-03-24",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-03-25",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-03-26",
+        "drawdown_pct": -0.77
+      },
+      {
+        "date": "2025-03-27",
+        "drawdown_pct": -0.32
+      },
+      {
+        "date": "2025-03-28",
+        "drawdown_pct": -0.63
+      },
+      {
+        "date": "2025-04-01",
+        "drawdown_pct": -2.12
+      },
+      {
+        "date": "2025-04-02",
+        "drawdown_pct": -1.42
+      },
+      {
+        "date": "2025-04-03",
+        "drawdown_pct": -1.77
+      },
+      {
+        "date": "2025-04-04",
+        "drawdown_pct": -3.23
+      },
+      {
+        "date": "2025-04-07",
+        "drawdown_pct": -6.37
+      },
+      {
+        "date": "2025-04-08",
+        "drawdown_pct": -4.79
+      },
+      {
+        "date": "2025-04-09",
+        "drawdown_pct": -5.36
+      },
+      {
+        "date": "2025-04-11",
+        "drawdown_pct": -3.55
+      },
+      {
+        "date": "2025-04-15",
+        "drawdown_pct": -1.44
+      },
+      {
+        "date": "2025-04-16",
+        "drawdown_pct": -0.98
+      },
+      {
+        "date": "2025-04-17",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-04-21",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-04-22",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-04-23",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-04-24",
+        "drawdown_pct": -0.34
+      },
+      {
+        "date": "2025-04-25",
+        "drawdown_pct": -1.19
+      },
+      {
+        "date": "2025-04-28",
+        "drawdown_pct": -0.0
+      },
+      {
+        "date": "2025-04-29",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-04-30",
+        "drawdown_pct": -0.01
+      },
+      {
+        "date": "2025-05-02",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-05-05",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-05-06",
+        "drawdown_pct": -0.33
+      },
+      {
+        "date": "2025-05-07",
+        "drawdown_pct": -0.19
+      },
+      {
+        "date": "2025-05-08",
+        "drawdown_pct": -0.77
+      },
+      {
+        "date": "2025-05-09",
+        "drawdown_pct": -1.85
+      },
+      {
+        "date": "2025-05-12",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-05-13",
+        "drawdown_pct": -1.39
+      },
+      {
+        "date": "2025-05-14",
+        "drawdown_pct": -1.03
+      },
+      {
+        "date": "2025-05-15",
+        "drawdown_pct": 0.0
+      },
+      {
+        "date": "2025-05-16",
+        "drawdown_pct": -0.27
+      }
+    ]
+  }
+}

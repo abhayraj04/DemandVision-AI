@@ -1,0 +1,768 @@
+{
+  "symbol": "HDFCBANK",
+  "last_updated": "2024-12-30",
+  "current_price": 888.95,
+  "walk_forward_validation": {
+    "validation_horizon": 14,
+    "test_actuals": [
+      874.8250122070312,
+      871.7000122070312,
+      867.0999755859375,
+      875.9249877929688,
+      867.2999877929688,
+      867.8499755859375,
+      868.6500244140625,
+      857.0499877929688,
+      878.9249877929688,
+      877.625,
+      873.2750244140625,
+      877.2249755859375,
+      883.1500244140625,
+      859.0999755859375
+    ],
+    "comparison": {
+      "Naive": {
+        "metrics": {
+          "mae": 6.5214,
+          "rmse": 7.9645,
+          "mape": 0.7468,
+          "directional_accuracy": 0.0,
+          "r2": -0.2405
+        },
+        "predictions": [
+          867.9000244140625,
+          867.9000244140625,
+          867.9000244140625,
+          867.9000244140625,
+          867.9000244140625,
+          867.9000244140625,
+          867.9000244140625,
+          867.9000244140625,
+          867.9000244140625,
+          867.9000244140625,
+          867.9000244140625,
+          867.9000244140625,
+          867.9000244140625,
+          867.9000244140625
+        ]
+      },
+      "Moving_Average_20": {
+        "metrics": {
+          "mae": 23.0434,
+          "rmse": 24.1274,
+          "mape": 2.6378,
+          "directional_accuracy": 35.71,
+          "r2": -10.3847
+        },
+        "predictions": [
+          848.3637542724609,
+          848.3637542724609,
+          848.3637542724609,
+          848.3637542724609,
+          848.3637542724609,
+          848.3637542724609,
+          848.3637542724609,
+          848.3637542724609,
+          848.3637542724609,
+          848.3637542724609,
+          848.3637542724609,
+          848.3637542724609,
+          848.3637542724609,
+          848.3637542724609
+        ]
+      },
+      "ARIMA_2_1_2": {
+        "metrics": {
+          "mae": 6.371,
+          "rmse": 7.7477,
+          "mape": 0.7299,
+          "directional_accuracy": 64.29,
+          "r2": -0.1739
+        },
+        "predictions": [
+          868.2302220800949,
+          868.8176569327478,
+          868.6240284990673,
+          868.2600090980783,
+          868.3732446711791,
+          868.5987122961088,
+          868.532689765593,
+          868.393103744616,
+          868.4314702604072,
+          868.5178477835757,
+          868.4956355626787,
+          868.4422082381016,
+          868.4550140055156,
+          868.4880458278583
+        ]
+      },
+      "SARIMAX_Weekly": {
+        "metrics": {
+          "mae": 10.6744,
+          "rmse": 12.9689,
+          "mape": 1.219,
+          "directional_accuracy": 35.71,
+          "r2": -2.2893
+        },
+        "predictions": [
+          866.9724491498382,
+          865.9138107659192,
+          864.8089101652241,
+          863.9117495378686,
+          862.9598779568855,
+          862.073782514261,
+          861.2747650910009,
+          860.5367647165247,
+          859.7861999192711,
+          859.0949212912627,
+          858.4271009352636,
+          857.7749076737555,
+          857.1439195306873,
+          856.5531645811498
+        ]
+      }
+    },
+    "best_model": "ARIMA_2_1_2"
+  },
+  "horizons": {
+    "7_day": {
+      "horizon_days": 7,
+      "target_date": "2025-01-08",
+      "target_predicted_price": 888.42,
+      "current_price": 888.95,
+      "expected_return_pct": -0.06,
+      "projected_direction": "BEARISH",
+      "forecast_series": [
+        {
+          "date": "2024-12-31",
+          "predicted_close": 889.44,
+          "lower_bound_95": 869.59,
+          "upper_bound_95": 909.28
+        },
+        {
+          "date": "2025-01-01",
+          "predicted_close": 888.87,
+          "lower_bound_95": 860.69,
+          "upper_bound_95": 917.06
+        },
+        {
+          "date": "2025-01-02",
+          "predicted_close": 888.41,
+          "lower_bound_95": 853.87,
+          "upper_bound_95": 922.95
+        },
+        {
+          "date": "2025-01-03",
+          "predicted_close": 888.99,
+          "lower_bound_95": 849.18,
+          "upper_bound_95": 928.79
+        },
+        {
+          "date": "2025-01-06",
+          "predicted_close": 889.42,
+          "lower_bound_95": 844.94,
+          "upper_bound_95": 933.91
+        },
+        {
+          "date": "2025-01-07",
+          "predicted_close": 888.84,
+          "lower_bound_95": 840.06,
+          "upper_bound_95": 937.62
+        },
+        {
+          "date": "2025-01-08",
+          "predicted_close": 888.42,
+          "lower_bound_95": 835.72,
+          "upper_bound_95": 941.12
+        }
+      ]
+    },
+    "14_day": {
+      "horizon_days": 14,
+      "target_date": "2025-01-17",
+      "target_predicted_price": 888.77,
+      "current_price": 888.95,
+      "expected_return_pct": -0.02,
+      "projected_direction": "BEARISH",
+      "forecast_series": [
+        {
+          "date": "2024-12-31",
+          "predicted_close": 889.44,
+          "lower_bound_95": 869.59,
+          "upper_bound_95": 909.28
+        },
+        {
+          "date": "2025-01-01",
+          "predicted_close": 888.87,
+          "lower_bound_95": 860.69,
+          "upper_bound_95": 917.06
+        },
+        {
+          "date": "2025-01-02",
+          "predicted_close": 888.41,
+          "lower_bound_95": 853.87,
+          "upper_bound_95": 922.95
+        },
+        {
+          "date": "2025-01-03",
+          "predicted_close": 888.99,
+          "lower_bound_95": 849.18,
+          "upper_bound_95": 928.79
+        },
+        {
+          "date": "2025-01-06",
+          "predicted_close": 889.42,
+          "lower_bound_95": 844.94,
+          "upper_bound_95": 933.91
+        },
+        {
+          "date": "2025-01-07",
+          "predicted_close": 888.84,
+          "lower_bound_95": 840.06,
+          "upper_bound_95": 937.62
+        },
+        {
+          "date": "2025-01-08",
+          "predicted_close": 888.42,
+          "lower_bound_95": 835.72,
+          "upper_bound_95": 941.12
+        },
+        {
+          "date": "2025-01-09",
+          "predicted_close": 889.02,
+          "lower_bound_95": 832.72,
+          "upper_bound_95": 945.32
+        },
+        {
+          "date": "2025-01-10",
+          "predicted_close": 889.41,
+          "lower_bound_95": 829.71,
+          "upper_bound_95": 949.11
+        },
+        {
+          "date": "2025-01-13",
+          "predicted_close": 888.8,
+          "lower_bound_95": 825.84,
+          "upper_bound_95": 951.77
+        },
+        {
+          "date": "2025-01-14",
+          "predicted_close": 888.44,
+          "lower_bound_95": 822.39,
+          "upper_bound_95": 954.48
+        },
+        {
+          "date": "2025-01-15",
+          "predicted_close": 889.05,
+          "lower_bound_95": 820.1,
+          "upper_bound_95": 958.0
+        },
+        {
+          "date": "2025-01-16",
+          "predicted_close": 889.39,
+          "lower_bound_95": 817.64,
+          "upper_bound_95": 961.15
+        },
+        {
+          "date": "2025-01-17",
+          "predicted_close": 888.77,
+          "lower_bound_95": 814.27,
+          "upper_bound_95": 963.27
+        }
+      ]
+    },
+    "30_day": {
+      "horizon_days": 30,
+      "target_date": "2025-02-10",
+      "target_predicted_price": 888.66,
+      "current_price": 888.95,
+      "expected_return_pct": -0.03,
+      "projected_direction": "BEARISH",
+      "forecast_series": [
+        {
+          "date": "2024-12-31",
+          "predicted_close": 889.44,
+          "lower_bound_95": 869.59,
+          "upper_bound_95": 909.28
+        },
+        {
+          "date": "2025-01-01",
+          "predicted_close": 888.87,
+          "lower_bound_95": 860.69,
+          "upper_bound_95": 917.06
+        },
+        {
+          "date": "2025-01-02",
+          "predicted_close": 888.41,
+          "lower_bound_95": 853.87,
+          "upper_bound_95": 922.95
+        },
+        {
+          "date": "2025-01-03",
+          "predicted_close": 888.99,
+          "lower_bound_95": 849.18,
+          "upper_bound_95": 928.79
+        },
+        {
+          "date": "2025-01-06",
+          "predicted_close": 889.42,
+          "lower_bound_95": 844.94,
+          "upper_bound_95": 933.91
+        },
+        {
+          "date": "2025-01-07",
+          "predicted_close": 888.84,
+          "lower_bound_95": 840.06,
+          "upper_bound_95": 937.62
+        },
+        {
+          "date": "2025-01-08",
+          "predicted_close": 888.42,
+          "lower_bound_95": 835.72,
+          "upper_bound_95": 941.12
+        },
+        {
+          "date": "2025-01-09",
+          "predicted_close": 889.02,
+          "lower_bound_95": 832.72,
+          "upper_bound_95": 945.32
+        },
+        {
+          "date": "2025-01-10",
+          "predicted_close": 889.41,
+          "lower_bound_95": 829.71,
+          "upper_bound_95": 949.11
+        },
+        {
+          "date": "2025-01-13",
+          "predicted_close": 888.8,
+          "lower_bound_95": 825.84,
+          "upper_bound_95": 951.77
+        },
+        {
+          "date": "2025-01-14",
+          "predicted_close": 888.44,
+          "lower_bound_95": 822.39,
+          "upper_bound_95": 954.48
+        },
+        {
+          "date": "2025-01-15",
+          "predicted_close": 889.05,
+          "lower_bound_95": 820.1,
+          "upper_bound_95": 958.0
+        },
+        {
+          "date": "2025-01-16",
+          "predicted_close": 889.39,
+          "lower_bound_95": 817.64,
+          "upper_bound_95": 961.15
+        },
+        {
+          "date": "2025-01-17",
+          "predicted_close": 888.77,
+          "lower_bound_95": 814.27,
+          "upper_bound_95": 963.27
+        },
+        {
+          "date": "2025-01-20",
+          "predicted_close": 888.45,
+          "lower_bound_95": 811.34,
+          "upper_bound_95": 965.57
+        },
+        {
+          "date": "2025-01-21",
+          "predicted_close": 889.09,
+          "lower_bound_95": 809.47,
+          "upper_bound_95": 968.7
+        },
+        {
+          "date": "2025-01-22",
+          "predicted_close": 889.38,
+          "lower_bound_95": 807.32,
+          "upper_bound_95": 971.44
+        },
+        {
+          "date": "2025-01-23",
+          "predicted_close": 888.74,
+          "lower_bound_95": 804.27,
+          "upper_bound_95": 973.21
+        },
+        {
+          "date": "2025-01-24",
+          "predicted_close": 888.47,
+          "lower_bound_95": 801.69,
+          "upper_bound_95": 975.26
+        },
+        {
+          "date": "2025-01-27",
+          "predicted_close": 889.12,
+          "lower_bound_95": 800.1,
+          "upper_bound_95": 978.13
+        },
+        {
+          "date": "2025-01-28",
+          "predicted_close": 889.36,
+          "lower_bound_95": 798.15,
+          "upper_bound_95": 980.57
+        },
+        {
+          "date": "2025-01-29",
+          "predicted_close": 888.71,
+          "lower_bound_95": 795.33,
+          "upper_bound_95": 982.09
+        },
+        {
+          "date": "2025-01-30",
+          "predicted_close": 888.49,
+          "lower_bound_95": 793.01,
+          "upper_bound_95": 983.97
+        },
+        {
+          "date": "2025-01-31",
+          "predicted_close": 889.14,
+          "lower_bound_95": 791.63,
+          "upper_bound_95": 986.65
+        },
+        {
+          "date": "2025-02-03",
+          "predicted_close": 889.34,
+          "lower_bound_95": 789.82,
+          "upper_bound_95": 988.85
+        },
+        {
+          "date": "2025-02-04",
+          "predicted_close": 888.68,
+          "lower_bound_95": 787.17,
+          "upper_bound_95": 990.19
+        },
+        {
+          "date": "2025-02-05",
+          "predicted_close": 888.51,
+          "lower_bound_95": 785.07,
+          "upper_bound_95": 991.96
+        },
+        {
+          "date": "2025-02-06",
+          "predicted_close": 889.17,
+          "lower_bound_95": 783.85,
+          "upper_bound_95": 994.49
+        },
+        {
+          "date": "2025-02-07",
+          "predicted_close": 889.31,
+          "lower_bound_95": 782.13,
+          "upper_bound_95": 996.5
+        },
+        {
+          "date": "2025-02-10",
+          "predicted_close": 888.66,
+          "lower_bound_95": 779.62,
+          "upper_bound_95": 997.7
+        }
+      ]
+    }
+  },
+  "recent_history": [
+    {
+      "date": "2024-10-03",
+      "actual_close": 841.0,
+      "volume": 48473398.0
+    },
+    {
+      "date": "2024-10-04",
+      "actual_close": 828.83,
+      "volume": 48683232.0
+    },
+    {
+      "date": "2024-10-07",
+      "actual_close": 808.9,
+      "volume": 94458296.0
+    },
+    {
+      "date": "2024-10-08",
+      "actual_close": 825.53,
+      "volume": 29734406.0
+    },
+    {
+      "date": "2024-10-09",
+      "actual_close": 816.58,
+      "volume": 41125642.0
+    },
+    {
+      "date": "2024-10-10",
+      "actual_close": 831.2,
+      "volume": 21754766.0
+    },
+    {
+      "date": "2024-10-11",
+      "actual_close": 825.5,
+      "volume": 23672594.0
+    },
+    {
+      "date": "2024-10-14",
+      "actual_close": 844.05,
+      "volume": 18527508.0
+    },
+    {
+      "date": "2024-10-15",
+      "actual_close": 842.05,
+      "volume": 19651130.0
+    },
+    {
+      "date": "2024-10-16",
+      "actual_close": 849.9,
+      "volume": 20470682.0
+    },
+    {
+      "date": "2024-10-17",
+      "actual_close": 836.58,
+      "volume": 14695732.0
+    },
+    {
+      "date": "2024-10-18",
+      "actual_close": 840.92,
+      "volume": 24809724.0
+    },
+    {
+      "date": "2024-10-21",
+      "actual_close": 864.35,
+      "volume": 46548354.0
+    },
+    {
+      "date": "2024-10-22",
+      "actual_close": 857.28,
+      "volume": 38875280.0
+    },
+    {
+      "date": "2024-10-23",
+      "actual_close": 867.9,
+      "volume": 38036090.0
+    },
+    {
+      "date": "2024-10-24",
+      "actual_close": 874.83,
+      "volume": 30832258.0
+    },
+    {
+      "date": "2024-10-25",
+      "actual_close": 871.7,
+      "volume": 26130478.0
+    },
+    {
+      "date": "2024-10-28",
+      "actual_close": 867.1,
+      "volume": 22012142.0
+    },
+    {
+      "date": "2024-10-29",
+      "actual_close": 875.92,
+      "volume": 35794926.0
+    },
+    {
+      "date": "2024-10-30",
+      "actual_close": 867.3,
+      "volume": 32715724.0
+    },
+    {
+      "date": "2024-10-31",
+      "actual_close": 867.85,
+      "volume": 22895912.0
+    },
+    {
+      "date": "2024-11-01",
+      "actual_close": 868.65,
+      "volume": 1759692.0
+    },
+    {
+      "date": "2024-11-04",
+      "actual_close": 857.05,
+      "volume": 28089248.0
+    },
+    {
+      "date": "2024-11-05",
+      "actual_close": 878.92,
+      "volume": 44232406.0
+    },
+    {
+      "date": "2024-11-06",
+      "actual_close": 877.62,
+      "volume": 27787910.0
+    },
+    {
+      "date": "2024-11-07",
+      "actual_close": 873.28,
+      "volume": 18895456.0
+    },
+    {
+      "date": "2024-11-08",
+      "actual_close": 877.22,
+      "volume": 19902986.0
+    },
+    {
+      "date": "2024-11-11",
+      "actual_close": 883.15,
+      "volume": 24565362.0
+    },
+    {
+      "date": "2024-11-12",
+      "actual_close": 859.1,
+      "volume": 31395406.0
+    },
+    {
+      "date": "2024-11-13",
+      "actual_close": 840.67,
+      "volume": 35728500.0
+    },
+    {
+      "date": "2024-11-14",
+      "actual_close": 846.38,
+      "volume": 27146470.0
+    },
+    {
+      "date": "2024-11-18",
+      "actual_close": 852.55,
+      "volume": 27081968.0
+    },
+    {
+      "date": "2024-11-19",
+      "actual_close": 871.12,
+      "volume": 50981272.0
+    },
+    {
+      "date": "2024-11-21",
+      "actual_close": 870.6,
+      "volume": 35716512.0
+    },
+    {
+      "date": "2024-11-22",
+      "actual_close": 872.8,
+      "volume": 24773612.0
+    },
+    {
+      "date": "2024-11-25",
+      "actual_close": 892.8,
+      "volume": 427737274.0
+    },
+    {
+      "date": "2024-11-26",
+      "actual_close": 892.78,
+      "volume": 30935566.0
+    },
+    {
+      "date": "2024-11-27",
+      "actual_close": 906.15,
+      "volume": 32714976.0
+    },
+    {
+      "date": "2024-11-28",
+      "actual_close": 896.58,
+      "volume": 35722392.0
+    },
+    {
+      "date": "2024-11-29",
+      "actual_close": 898.03,
+      "volume": 27669536.0
+    },
+    {
+      "date": "2024-12-02",
+      "actual_close": 902.35,
+      "volume": 15110876.0
+    },
+    {
+      "date": "2024-12-03",
+      "actual_close": 913.15,
+      "volume": 43410242.0
+    },
+    {
+      "date": "2024-12-04",
+      "actual_close": 930.05,
+      "volume": 44669084.0
+    },
+    {
+      "date": "2024-12-05",
+      "actual_close": 932.88,
+      "volume": 39682714.0
+    },
+    {
+      "date": "2024-12-06",
+      "actual_close": 927.92,
+      "volume": 17783156.0
+    },
+    {
+      "date": "2024-12-09",
+      "actual_close": 935.0,
+      "volume": 26947912.0
+    },
+    {
+      "date": "2024-12-10",
+      "actual_close": 934.05,
+      "volume": 13325480.0
+    },
+    {
+      "date": "2024-12-11",
+      "actual_close": 931.55,
+      "volume": 14045426.0
+    },
+    {
+      "date": "2024-12-12",
+      "actual_close": 929.62,
+      "volume": 17293790.0
+    },
+    {
+      "date": "2024-12-13",
+      "actual_close": 935.88,
+      "volume": 19009002.0
+    },
+    {
+      "date": "2024-12-16",
+      "actual_close": 932.6,
+      "volume": 13107082.0
+    },
+    {
+      "date": "2024-12-17",
+      "actual_close": 916.62,
+      "volume": 21079532.0
+    },
+    {
+      "date": "2024-12-18",
+      "actual_close": 905.35,
+      "volume": 23422312.0
+    },
+    {
+      "date": "2024-12-19",
+      "actual_close": 896.75,
+      "volume": 25380770.0
+    },
+    {
+      "date": "2024-12-20",
+      "actual_close": 885.75,
+      "volume": 25692348.0
+    },
+    {
+      "date": "2024-12-23",
+      "actual_close": 900.5,
+      "volume": 11044592.0
+    },
+    {
+      "date": "2024-12-24",
+      "actual_close": 899.05,
+      "volume": 14485834.0
+    },
+    {
+      "date": "2024-12-26",
+      "actual_close": 895.38,
+      "volume": 10481678.0
+    },
+    {
+      "date": "2024-12-27",
+      "actual_close": 899.12,
+      "volume": 7259330.0
+    },
+    {
+      "date": "2024-12-30",
+      "actual_close": 888.95,
+      "volume": 22222218.0
+    }
+  ],
+  "uncertainty_disclaimer": "Forecasts represent statistical conditional expectations and confidence bounds based on historical price dynamics. Financial markets possess inherent stochastic volatility; these projections do not guarantee future performance and are strictly for quantitative research."
+}

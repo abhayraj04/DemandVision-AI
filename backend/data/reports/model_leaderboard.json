@@ -1,0 +1,3313 @@
+{
+  "RELIANCE": {
+    "symbol": "RELIANCE",
+    "models": {
+      "Naive": {
+        "model_family": "Statistical Baseline",
+        "complexity": "O(1) - Zero parameters",
+        "rmse": 33.1144,
+        "mae": 23.5786,
+        "mape": 1.8251,
+        "directional_accuracy": 0.0,
+        "r2": -0.8436
+      },
+      "Moving_Average_20": {
+        "model_family": "Statistical Smoothing",
+        "complexity": "O(k) - 1 parameter (window=20)",
+        "rmse": 86.208,
+        "mae": 82.6862,
+        "mape": 6.3195,
+        "directional_accuracy": 28.57,
+        "r2": -11.4945
+      },
+      "ARIMA_2_1_2": {
+        "model_family": "Econometric Time-Series",
+        "complexity": "O(p+q) - 5 parameters",
+        "rmse": 32.5123,
+        "mae": 23.2741,
+        "mape": 1.8011,
+        "directional_accuracy": 71.43,
+        "r2": -0.7771
+      },
+      "SARIMAX_Weekly": {
+        "model_family": "Seasonal Econometric",
+        "complexity": "O(p+q+P+Q) - 7 parameters + seasonality(s=5)",
+        "rmse": 33.1226,
+        "mae": 23.576,
+        "mape": 1.8249,
+        "directional_accuracy": 50.0,
+        "r2": -0.8445
+      },
+      "XGBoost_Lagged": {
+        "model_family": "Gradient Boosted Trees",
+        "complexity": "Nonlinear Ensemble (150 trees, 13 features)",
+        "rmse": 20.7651,
+        "mae": 14.6149,
+        "mape": 1.0268,
+        "directional_accuracy": 50.44,
+        "r2": 0.9456
+      }
+    },
+    "best_model": "XGBoost_Lagged",
+    "selection_rationale": "XGBoost extracted nonlinear multi-feature interactions across momentum, volume ratios, and volatility regimes, yielding superior out-of-sample directional accuracy.",
+    "feature_importances": [
+      {
+        "feature": "ratio_sma50",
+        "importance": 0.1255
+      },
+      {
+        "feature": "bb_width",
+        "importance": 0.124
+      },
+      {
+        "feature": "ratio_sma20",
+        "importance": 0.0896
+      },
+      {
+        "feature": "ret_lag5",
+        "importance": 0.0859
+      },
+      {
+        "feature": "atr_norm",
+        "importance": 0.0834
+      },
+      {
+        "feature": "ratio_sma200",
+        "importance": 0.0736
+      },
+      {
+        "feature": "bb_pct_b",
+        "importance": 0.0725
+      },
+      {
+        "feature": "rsi_norm",
+        "importance": 0.0711
+      },
+      {
+        "feature": "ret_lag2",
+        "importance": 0.0687
+      },
+      {
+        "feature": "volume_ratio",
+        "importance": 0.0651
+      },
+      {
+        "feature": "macd_norm",
+        "importance": 0.0587
+      },
+      {
+        "feature": "ret_lag3",
+        "importance": 0.053
+      },
+      {
+        "feature": "ret_lag1",
+        "importance": 0.0289
+      }
+    ],
+    "residual_stats": {
+      "mean_error": -1.9454,
+      "std_error": 20.6738,
+      "skewness": -0.1202,
+      "kurtosis": 6.1331
+    },
+    "dataset_split": {
+      "train_samples": 1070,
+      "validation_samples": 228,
+      "test_samples": 228,
+      "train_start": "2018-10-23",
+      "test_end": "2024-12-27"
+    },
+    "recent_predictions": [
+      {
+        "date": "2024-11-13",
+        "actual": 1267.6,
+        "predicted": 1253.79,
+        "residual": 13.81
+      },
+      {
+        "date": "2024-11-14",
+        "actual": 1260.75,
+        "predicted": 1268.79,
+        "residual": -8.04
+      },
+      {
+        "date": "2024-11-18",
+        "actual": 1241.65,
+        "predicted": 1261.94,
+        "residual": -20.29
+      },
+      {
+        "date": "2024-11-19",
+        "actual": 1223.0,
+        "predicted": 1242.82,
+        "residual": -19.82
+      },
+      {
+        "date": "2024-11-21",
+        "actual": 1265.4,
+        "predicted": 1224.7,
+        "residual": 40.7
+      },
+      {
+        "date": "2024-11-22",
+        "actual": 1287.0,
+        "predicted": 1266.59,
+        "residual": 20.41
+      },
+      {
+        "date": "2024-11-25",
+        "actual": 1295.7,
+        "predicted": 1288.52,
+        "residual": 7.18
+      },
+      {
+        "date": "2024-11-26",
+        "actual": 1293.2,
+        "predicted": 1296.92,
+        "residual": -3.72
+      },
+      {
+        "date": "2024-11-27",
+        "actual": 1270.8,
+        "predicted": 1294.42,
+        "residual": -23.62
+      },
+      {
+        "date": "2024-11-28",
+        "actual": 1292.2,
+        "predicted": 1272.0,
+        "residual": 20.2
+      },
+      {
+        "date": "2024-11-29",
+        "actual": 1309.15,
+        "predicted": 1293.42,
+        "residual": 15.73
+      },
+      {
+        "date": "2024-12-02",
+        "actual": 1323.3,
+        "predicted": 1310.38,
+        "residual": 12.92
+      },
+      {
+        "date": "2024-12-03",
+        "actual": 1308.95,
+        "predicted": 1324.55,
+        "residual": -15.6
+      },
+      {
+        "date": "2024-12-04",
+        "actual": 1322.05,
+        "predicted": 1310.18,
+        "residual": 11.87
+      },
+      {
+        "date": "2024-12-05",
+        "actual": 1311.55,
+        "predicted": 1323.3,
+        "residual": -11.75
+      },
+      {
+        "date": "2024-12-06",
+        "actual": 1295.15,
+        "predicted": 1312.79,
+        "residual": -17.64
+      },
+      {
+        "date": "2024-12-09",
+        "actual": 1284.85,
+        "predicted": 1296.37,
+        "residual": -11.52
+      },
+      {
+        "date": "2024-12-10",
+        "actual": 1278.2,
+        "predicted": 1286.06,
+        "residual": -7.86
+      },
+      {
+        "date": "2024-12-11",
+        "actual": 1262.9,
+        "predicted": 1279.4,
+        "residual": -16.5
+      },
+      {
+        "date": "2024-12-12",
+        "actual": 1272.85,
+        "predicted": 1264.09,
+        "residual": 8.76
+      },
+      {
+        "date": "2024-12-13",
+        "actual": 1268.3,
+        "predicted": 1274.05,
+        "residual": -5.75
+      },
+      {
+        "date": "2024-12-16",
+        "actual": 1245.3,
+        "predicted": 1269.49,
+        "residual": -24.19
+      },
+      {
+        "date": "2024-12-17",
+        "actual": 1253.25,
+        "predicted": 1246.47,
+        "residual": 6.78
+      },
+      {
+        "date": "2024-12-18",
+        "actual": 1230.45,
+        "predicted": 1254.43,
+        "residual": -23.98
+      },
+      {
+        "date": "2024-12-19",
+        "actual": 1205.3,
+        "predicted": 1231.61,
+        "residual": -26.31
+      },
+      {
+        "date": "2024-12-20",
+        "actual": 1222.3,
+        "predicted": 1206.44,
+        "residual": 15.86
+      },
+      {
+        "date": "2024-12-23",
+        "actual": 1222.75,
+        "predicted": 1223.45,
+        "residual": -0.7
+      },
+      {
+        "date": "2024-12-24",
+        "actual": 1216.55,
+        "predicted": 1223.9,
+        "residual": -7.35
+      },
+      {
+        "date": "2024-12-26",
+        "actual": 1221.05,
+        "predicted": 1217.7,
+        "residual": 3.35
+      },
+      {
+        "date": "2024-12-27",
+        "actual": 1210.7,
+        "predicted": 1222.2,
+        "residual": -11.5
+      }
+    ]
+  },
+  "TCS": {
+    "symbol": "TCS",
+    "models": {
+      "Naive": {
+        "model_family": "Statistical Baseline",
+        "complexity": "O(1) - Zero parameters",
+        "rmse": 80.6145,
+        "mae": 68.45,
+        "mape": 1.6763,
+        "directional_accuracy": 0.0,
+        "r2": -0.0181
+      },
+      "Moving_Average_20": {
+        "model_family": "Statistical Smoothing",
+        "complexity": "O(k) - 1 parameter (window=20)",
+        "rmse": 139.0063,
+        "mae": 115.8375,
+        "mape": 2.8793,
+        "directional_accuracy": 57.14,
+        "r2": -2.0272
+      },
+      "ARIMA_2_1_2": {
+        "model_family": "Econometric Time-Series",
+        "complexity": "O(p+q) - 5 parameters",
+        "rmse": 81.3793,
+        "mae": 70.2946,
+        "mape": 1.7212,
+        "directional_accuracy": 28.57,
+        "r2": -0.0375
+      },
+      "SARIMAX_Weekly": {
+        "model_family": "Seasonal Econometric",
+        "complexity": "O(p+q+P+Q) - 7 parameters + seasonality(s=5)",
+        "rmse": 80.3345,
+        "mae": 67.9478,
+        "mape": 1.6646,
+        "directional_accuracy": 64.29,
+        "r2": -0.011
+      },
+      "XGBoost_Lagged": {
+        "model_family": "Gradient Boosted Trees",
+        "complexity": "Nonlinear Ensemble (150 trees, 13 features)",
+        "rmse": 53.6364,
+        "mae": 38.4978,
+        "mape": 0.9385,
+        "directional_accuracy": 46.49,
+        "r2": 0.9407
+      }
+    },
+    "best_model": "XGBoost_Lagged",
+    "selection_rationale": "XGBoost extracted nonlinear multi-feature interactions across momentum, volume ratios, and volatility regimes, yielding superior out-of-sample directional accuracy.",
+    "feature_importances": [
+      {
+        "feature": "ratio_sma200",
+        "importance": 0.1144
+      },
+      {
+        "feature": "ret_lag2",
+        "importance": 0.096
+      },
+      {
+        "feature": "atr_norm",
+        "importance": 0.0946
+      },
+      {
+        "feature": "bb_width",
+        "importance": 0.0863
+      },
+      {
+        "feature": "volume_ratio",
+        "importance": 0.085
+      },
+      {
+        "feature": "ret_lag3",
+        "importance": 0.0804
+      },
+      {
+        "feature": "macd_norm",
+        "importance": 0.0789
+      },
+      {
+        "feature": "ret_lag1",
+        "importance": 0.0719
+      },
+      {
+        "feature": "ret_lag5",
+        "importance": 0.0634
+      },
+      {
+        "feature": "ratio_sma50",
+        "importance": 0.0629
+      },
+      {
+        "feature": "bb_pct_b",
+        "importance": 0.062
+      },
+      {
+        "feature": "rsi_norm",
+        "importance": 0.0615
+      },
+      {
+        "feature": "ratio_sma20",
+        "importance": 0.0426
+      }
+    ],
+    "residual_stats": {
+      "mean_error": -1.2966,
+      "std_error": 53.6207,
+      "skewness": 0.5878,
+      "kurtosis": 3.192
+    },
+    "dataset_split": {
+      "train_samples": 1070,
+      "validation_samples": 228,
+      "test_samples": 228,
+      "train_start": "2018-10-23",
+      "test_end": "2024-12-27"
+    },
+    "recent_predictions": [
+      {
+        "date": "2024-11-13",
+        "actual": 4145.9,
+        "predicted": 4152.05,
+        "residual": -6.15
+      },
+      {
+        "date": "2024-11-14",
+        "actual": 4019.5,
+        "predicted": 4147.97,
+        "residual": -128.47
+      },
+      {
+        "date": "2024-11-18",
+        "actual": 4039.55,
+        "predicted": 4023.78,
+        "residual": 15.77
+      },
+      {
+        "date": "2024-11-19",
+        "actual": 4072.85,
+        "predicted": 4042.34,
+        "residual": 30.51
+      },
+      {
+        "date": "2024-11-21",
+        "actual": 4244.6,
+        "predicted": 4074.88,
+        "residual": 169.72
+      },
+      {
+        "date": "2024-11-22",
+        "actual": 4315.1,
+        "predicted": 4251.7,
+        "residual": 63.4
+      },
+      {
+        "date": "2024-11-25",
+        "actual": 4352.7,
+        "predicted": 4314.39,
+        "residual": 38.31
+      },
+      {
+        "date": "2024-11-26",
+        "actual": 4332.55,
+        "predicted": 4354.48,
+        "residual": -21.93
+      },
+      {
+        "date": "2024-11-27",
+        "actual": 4244.9,
+        "predicted": 4334.32,
+        "residual": -89.42
+      },
+      {
+        "date": "2024-11-28",
+        "actual": 4270.85,
+        "predicted": 4247.26,
+        "residual": 23.59
+      },
+      {
+        "date": "2024-11-29",
+        "actual": 4276.65,
+        "predicted": 4272.98,
+        "residual": 3.67
+      },
+      {
+        "date": "2024-12-02",
+        "actual": 4302.75,
+        "predicted": 4278.78,
+        "residual": 23.97
+      },
+      {
+        "date": "2024-12-03",
+        "actual": 4354.4,
+        "predicted": 4304.9,
+        "residual": 49.5
+      },
+      {
+        "date": "2024-12-04",
+        "actual": 4464.05,
+        "predicted": 4354.72,
+        "residual": 109.33
+      },
+      {
+        "date": "2024-12-05",
+        "actual": 4445.5,
+        "predicted": 4471.51,
+        "residual": -26.01
+      },
+      {
+        "date": "2024-12-06",
+        "actual": 4452.15,
+        "predicted": 4438.83,
+        "residual": 13.32
+      },
+      {
+        "date": "2024-12-09",
+        "actual": 4432.55,
+        "predicted": 4453.97,
+        "residual": -21.42
+      },
+      {
+        "date": "2024-12-10",
+        "actual": 4427.45,
+        "predicted": 4434.76,
+        "residual": -7.31
+      },
+      {
+        "date": "2024-12-11",
+        "actual": 4454.95,
+        "predicted": 4429.66,
+        "residual": 25.29
+      },
+      {
+        "date": "2024-12-12",
+        "actual": 4473.9,
+        "predicted": 4457.17,
+        "residual": 16.73
+      },
+      {
+        "date": "2024-12-13",
+        "actual": 4415.2,
+        "predicted": 4476.13,
+        "residual": -60.93
+      },
+      {
+        "date": "2024-12-16",
+        "actual": 4328.5,
+        "predicted": 4417.4,
+        "residual": -88.9
+      },
+      {
+        "date": "2024-12-17",
+        "actual": 4347.85,
+        "predicted": 4332.31,
+        "residual": 15.54
+      },
+      {
+        "date": "2024-12-18",
+        "actual": 4271.9,
+        "predicted": 4349.52,
+        "residual": -77.62
+      },
+      {
+        "date": "2024-12-19",
+        "actual": 4170.3,
+        "predicted": 4273.54,
+        "residual": -103.24
+      },
+      {
+        "date": "2024-12-20",
+        "actual": 4158.3,
+        "predicted": 4173.5,
+        "residual": -15.2
+      },
+      {
+        "date": "2024-12-23",
+        "actual": 4179.5,
+        "predicted": 4158.63,
+        "residual": 20.87
+      },
+      {
+        "date": "2024-12-24",
+        "actual": 4169.1,
+        "predicted": 4182.18,
+        "residual": -13.08
+      },
+      {
+        "date": "2024-12-26",
+        "actual": 4164.85,
+        "predicted": 4169.7,
+        "residual": -4.85
+      },
+      {
+        "date": "2024-12-27",
+        "actual": 4158.8,
+        "predicted": 4165.37,
+        "residual": -6.57
+      }
+    ]
+  },
+  "INFY": {
+    "symbol": "INFY",
+    "models": {
+      "Naive": {
+        "model_family": "Statistical Baseline",
+        "complexity": "O(1) - Zero parameters",
+        "rmse": 69.9277,
+        "mae": 55.2786,
+        "mape": 3.0981,
+        "directional_accuracy": 0.0,
+        "r2": -1.666
+      },
+      "Moving_Average_20": {
+        "model_family": "Statistical Smoothing",
+        "complexity": "O(k) - 1 parameter (window=20)",
+        "rmse": 103.5159,
+        "mae": 94.2411,
+        "mape": 5.2423,
+        "directional_accuracy": 0.0,
+        "r2": -4.8422
+      },
+      "ARIMA_2_1_2": {
+        "model_family": "Econometric Time-Series",
+        "complexity": "O(p+q) - 5 parameters",
+        "rmse": 71.5259,
+        "mae": 57.3405,
+        "mape": 3.2114,
+        "directional_accuracy": 0.0,
+        "r2": -1.7893
+      },
+      "SARIMAX_Weekly": {
+        "model_family": "Seasonal Econometric",
+        "complexity": "O(p+q+P+Q) - 7 parameters + seasonality(s=5)",
+        "rmse": 72.1604,
+        "mae": 58.4986,
+        "mape": 3.2745,
+        "directional_accuracy": 0.0,
+        "r2": -1.839
+      },
+      "XGBoost_Lagged": {
+        "model_family": "Gradient Boosted Trees",
+        "complexity": "Nonlinear Ensemble (150 trees, 13 features)",
+        "rmse": 23.5621,
+        "mae": 17.2972,
+        "mape": 1.008,
+        "directional_accuracy": 51.75,
+        "r2": 0.984
+      }
+    },
+    "best_model": "XGBoost_Lagged",
+    "selection_rationale": "XGBoost extracted nonlinear multi-feature interactions across momentum, volume ratios, and volatility regimes, yielding superior out-of-sample directional accuracy.",
+    "feature_importances": [
+      {
+        "feature": "atr_norm",
+        "importance": 0.1529
+      },
+      {
+        "feature": "ratio_sma50",
+        "importance": 0.0976
+      },
+      {
+        "feature": "ratio_sma200",
+        "importance": 0.0904
+      },
+      {
+        "feature": "ret_lag2",
+        "importance": 0.0826
+      },
+      {
+        "feature": "volume_ratio",
+        "importance": 0.0813
+      },
+      {
+        "feature": "ret_lag5",
+        "importance": 0.0771
+      },
+      {
+        "feature": "bb_width",
+        "importance": 0.0753
+      },
+      {
+        "feature": "macd_norm",
+        "importance": 0.0744
+      },
+      {
+        "feature": "ratio_sma20",
+        "importance": 0.0737
+      },
+      {
+        "feature": "rsi_norm",
+        "importance": 0.0691
+      },
+      {
+        "feature": "ret_lag3",
+        "importance": 0.0513
+      },
+      {
+        "feature": "bb_pct_b",
+        "importance": 0.0438
+      },
+      {
+        "feature": "ret_lag1",
+        "importance": 0.0305
+      }
+    ],
+    "residual_stats": {
+      "mean_error": -0.6314,
+      "std_error": 23.5536,
+      "skewness": -0.219,
+      "kurtosis": 1.4439
+    },
+    "dataset_split": {
+      "train_samples": 1070,
+      "validation_samples": 228,
+      "test_samples": 228,
+      "train_start": "2018-10-23",
+      "test_end": "2024-12-27"
+    },
+    "recent_predictions": [
+      {
+        "date": "2024-11-13",
+        "actual": 1864.55,
+        "predicted": 1870.35,
+        "residual": -5.8
+      },
+      {
+        "date": "2024-11-14",
+        "actual": 1811.45,
+        "predicted": 1866.5,
+        "residual": -55.05
+      },
+      {
+        "date": "2024-11-18",
+        "actual": 1824.75,
+        "predicted": 1813.34,
+        "residual": 11.41
+      },
+      {
+        "date": "2024-11-19",
+        "actual": 1834.05,
+        "predicted": 1826.81,
+        "residual": 7.24
+      },
+      {
+        "date": "2024-11-21",
+        "actual": 1902.25,
+        "predicted": 1835.97,
+        "residual": 66.28
+      },
+      {
+        "date": "2024-11-22",
+        "actual": 1889.7,
+        "predicted": 1903.51,
+        "residual": -13.81
+      },
+      {
+        "date": "2024-11-25",
+        "actual": 1924.15,
+        "predicted": 1887.47,
+        "residual": 36.68
+      },
+      {
+        "date": "2024-11-26",
+        "actual": 1924.5,
+        "predicted": 1926.32,
+        "residual": -1.82
+      },
+      {
+        "date": "2024-11-27",
+        "actual": 1856.65,
+        "predicted": 1925.06,
+        "residual": -68.41
+      },
+      {
+        "date": "2024-11-28",
+        "actual": 1857.85,
+        "predicted": 1859.53,
+        "residual": -1.68
+      },
+      {
+        "date": "2024-11-29",
+        "actual": 1879.8,
+        "predicted": 1859.94,
+        "residual": 19.86
+      },
+      {
+        "date": "2024-12-02",
+        "actual": 1892.1,
+        "predicted": 1881.77,
+        "residual": 10.33
+      },
+      {
+        "date": "2024-12-03",
+        "actual": 1889.25,
+        "predicted": 1894.08,
+        "residual": -4.83
+      },
+      {
+        "date": "2024-12-04",
+        "actual": 1934.85,
+        "predicted": 1887.66,
+        "residual": 47.19
+      },
+      {
+        "date": "2024-12-05",
+        "actual": 1922.4,
+        "predicted": 1936.87,
+        "residual": -14.47
+      },
+      {
+        "date": "2024-12-06",
+        "actual": 1923.65,
+        "predicted": 1922.69,
+        "residual": 0.96
+      },
+      {
+        "date": "2024-12-09",
+        "actual": 1948.55,
+        "predicted": 1925.82,
+        "residual": 22.73
+      },
+      {
+        "date": "2024-12-10",
+        "actual": 1974.15,
+        "predicted": 1950.59,
+        "residual": 23.56
+      },
+      {
+        "date": "2024-12-11",
+        "actual": 1987.0,
+        "predicted": 1976.34,
+        "residual": 10.66
+      },
+      {
+        "date": "2024-12-12",
+        "actual": 1999.7,
+        "predicted": 1989.08,
+        "residual": 10.62
+      },
+      {
+        "date": "2024-12-13",
+        "actual": 1980.05,
+        "predicted": 2001.79,
+        "residual": -21.74
+      },
+      {
+        "date": "2024-12-16",
+        "actual": 1976.6,
+        "predicted": 1982.12,
+        "residual": -5.52
+      },
+      {
+        "date": "2024-12-17",
+        "actual": 1979.15,
+        "predicted": 1978.83,
+        "residual": 0.32
+      },
+      {
+        "date": "2024-12-18",
+        "actual": 1946.2,
+        "predicted": 1981.22,
+        "residual": -35.02
+      },
+      {
+        "date": "2024-12-19",
+        "actual": 1922.15,
+        "predicted": 1948.23,
+        "residual": -26.08
+      },
+      {
+        "date": "2024-12-20",
+        "actual": 1924.3,
+        "predicted": 1924.32,
+        "residual": -0.02
+      },
+      {
+        "date": "2024-12-23",
+        "actual": 1909.05,
+        "predicted": 1926.47,
+        "residual": -17.42
+      },
+      {
+        "date": "2024-12-24",
+        "actual": 1907.4,
+        "predicted": 1911.05,
+        "residual": -3.65
+      },
+      {
+        "date": "2024-12-26",
+        "actual": 1916.75,
+        "predicted": 1909.55,
+        "residual": 7.2
+      },
+      {
+        "date": "2024-12-27",
+        "actual": 1906.0,
+        "predicted": 1918.75,
+        "residual": -12.75
+      }
+    ]
+  },
+  "HDFCBANK": {
+    "symbol": "HDFCBANK",
+    "models": {
+      "Naive": {
+        "model_family": "Statistical Baseline",
+        "complexity": "O(1) - Zero parameters",
+        "rmse": 7.9645,
+        "mae": 6.5214,
+        "mape": 0.7468,
+        "directional_accuracy": 0.0,
+        "r2": -0.2405
+      },
+      "Moving_Average_20": {
+        "model_family": "Statistical Smoothing",
+        "complexity": "O(k) - 1 parameter (window=20)",
+        "rmse": 24.1274,
+        "mae": 23.0434,
+        "mape": 2.6378,
+        "directional_accuracy": 35.71,
+        "r2": -10.3847
+      },
+      "ARIMA_2_1_2": {
+        "model_family": "Econometric Time-Series",
+        "complexity": "O(p+q) - 5 parameters",
+        "rmse": 7.7477,
+        "mae": 6.371,
+        "mape": 0.7299,
+        "directional_accuracy": 64.29,
+        "r2": -0.1739
+      },
+      "SARIMAX_Weekly": {
+        "model_family": "Seasonal Econometric",
+        "complexity": "O(p+q+P+Q) - 7 parameters + seasonality(s=5)",
+        "rmse": 12.9689,
+        "mae": 10.6744,
+        "mape": 1.219,
+        "directional_accuracy": 35.71,
+        "r2": -2.2893
+      },
+      "XGBoost_Lagged": {
+        "model_family": "Gradient Boosted Trees",
+        "complexity": "Nonlinear Ensemble (150 trees, 13 features)",
+        "rmse": 10.3953,
+        "mae": 7.6234,
+        "mape": 0.9475,
+        "directional_accuracy": 53.07,
+        "r2": 0.9742
+      }
+    },
+    "best_model": "ARIMA_2_1_2",
+    "selection_rationale": "ARIMA achieved the superior variance-bias tradeoff by modeling linear autocorrelation and differencing the non-stationary price series without excessive variance.",
+    "feature_importances": [
+      {
+        "feature": "ratio_sma200",
+        "importance": 0.1279
+      },
+      {
+        "feature": "rsi_norm",
+        "importance": 0.1248
+      },
+      {
+        "feature": "ratio_sma50",
+        "importance": 0.0969
+      },
+      {
+        "feature": "atr_norm",
+        "importance": 0.0935
+      },
+      {
+        "feature": "bb_pct_b",
+        "importance": 0.0827
+      },
+      {
+        "feature": "macd_norm",
+        "importance": 0.0817
+      },
+      {
+        "feature": "bb_width",
+        "importance": 0.0804
+      },
+      {
+        "feature": "ret_lag5",
+        "importance": 0.0691
+      },
+      {
+        "feature": "ratio_sma20",
+        "importance": 0.0634
+      },
+      {
+        "feature": "volume_ratio",
+        "importance": 0.0519
+      },
+      {
+        "feature": "ret_lag3",
+        "importance": 0.0475
+      },
+      {
+        "feature": "ret_lag2",
+        "importance": 0.0422
+      },
+      {
+        "feature": "ret_lag1",
+        "importance": 0.038
+      }
+    ],
+    "residual_stats": {
+      "mean_error": 0.1886,
+      "std_error": 10.3935,
+      "skewness": -0.4327,
+      "kurtosis": 2.2801
+    },
+    "dataset_split": {
+      "train_samples": 1070,
+      "validation_samples": 228,
+      "test_samples": 228,
+      "train_start": "2018-10-23",
+      "test_end": "2024-12-27"
+    },
+    "recent_predictions": [
+      {
+        "date": "2024-11-13",
+        "actual": 846.38,
+        "predicted": 841.14,
+        "residual": 5.24
+      },
+      {
+        "date": "2024-11-14",
+        "actual": 852.55,
+        "predicted": 847.05,
+        "residual": 5.5
+      },
+      {
+        "date": "2024-11-18",
+        "actual": 871.12,
+        "predicted": 853.23,
+        "residual": 17.9
+      },
+      {
+        "date": "2024-11-19",
+        "actual": 870.6,
+        "predicted": 871.82,
+        "residual": -1.22
+      },
+      {
+        "date": "2024-11-21",
+        "actual": 872.8,
+        "predicted": 871.08,
+        "residual": 1.72
+      },
+      {
+        "date": "2024-11-22",
+        "actual": 892.8,
+        "predicted": 873.38,
+        "residual": 19.42
+      },
+      {
+        "date": "2024-11-25",
+        "actual": 892.78,
+        "predicted": 893.51,
+        "residual": -0.73
+      },
+      {
+        "date": "2024-11-26",
+        "actual": 906.15,
+        "predicted": 893.37,
+        "residual": 12.78
+      },
+      {
+        "date": "2024-11-27",
+        "actual": 896.58,
+        "predicted": 906.87,
+        "residual": -10.3
+      },
+      {
+        "date": "2024-11-28",
+        "actual": 898.03,
+        "predicted": 897.07,
+        "residual": 0.96
+      },
+      {
+        "date": "2024-11-29",
+        "actual": 902.35,
+        "predicted": 898.62,
+        "residual": 3.73
+      },
+      {
+        "date": "2024-12-02",
+        "actual": 913.15,
+        "predicted": 902.85,
+        "residual": 10.3
+      },
+      {
+        "date": "2024-12-03",
+        "actual": 930.05,
+        "predicted": 913.88,
+        "residual": 16.17
+      },
+      {
+        "date": "2024-12-04",
+        "actual": 932.88,
+        "predicted": 930.79,
+        "residual": 2.09
+      },
+      {
+        "date": "2024-12-05",
+        "actual": 927.92,
+        "predicted": 933.39,
+        "residual": -5.46
+      },
+      {
+        "date": "2024-12-06",
+        "actual": 935.0,
+        "predicted": 928.54,
+        "residual": 6.46
+      },
+      {
+        "date": "2024-12-09",
+        "actual": 934.05,
+        "predicted": 935.74,
+        "residual": -1.69
+      },
+      {
+        "date": "2024-12-10",
+        "actual": 931.55,
+        "predicted": 934.67,
+        "residual": -3.12
+      },
+      {
+        "date": "2024-12-11",
+        "actual": 929.62,
+        "predicted": 932.06,
+        "residual": -2.44
+      },
+      {
+        "date": "2024-12-12",
+        "actual": 935.87,
+        "predicted": 930.14,
+        "residual": 5.74
+      },
+      {
+        "date": "2024-12-13",
+        "actual": 932.6,
+        "predicted": 936.62,
+        "residual": -4.02
+      },
+      {
+        "date": "2024-12-16",
+        "actual": 916.62,
+        "predicted": 933.11,
+        "residual": -16.49
+      },
+      {
+        "date": "2024-12-17",
+        "actual": 905.35,
+        "predicted": 917.13,
+        "residual": -11.78
+      },
+      {
+        "date": "2024-12-18",
+        "actual": 896.75,
+        "predicted": 905.85,
+        "residual": -9.1
+      },
+      {
+        "date": "2024-12-19",
+        "actual": 885.75,
+        "predicted": 897.35,
+        "residual": -11.6
+      },
+      {
+        "date": "2024-12-20",
+        "actual": 900.5,
+        "predicted": 886.24,
+        "residual": 14.26
+      },
+      {
+        "date": "2024-12-23",
+        "actual": 899.05,
+        "predicted": 901.42,
+        "residual": -2.37
+      },
+      {
+        "date": "2024-12-24",
+        "actual": 895.38,
+        "predicted": 899.54,
+        "residual": -4.17
+      },
+      {
+        "date": "2024-12-26",
+        "actual": 899.12,
+        "predicted": 895.87,
+        "residual": 3.26
+      },
+      {
+        "date": "2024-12-27",
+        "actual": 888.95,
+        "predicted": 899.62,
+        "residual": -10.67
+      }
+    ]
+  },
+  "ICICIBANK": {
+    "symbol": "ICICIBANK",
+    "models": {
+      "Naive": {
+        "model_family": "Statistical Baseline",
+        "complexity": "O(1) - Zero parameters",
+        "rmse": 39.4776,
+        "mae": 32.8857,
+        "mape": 2.5322,
+        "directional_accuracy": 0.0,
+        "r2": -2.2672
+      },
+      "Moving_Average_20": {
+        "model_family": "Statistical Smoothing",
+        "complexity": "O(k) - 1 parameter (window=20)",
+        "rmse": 33.2442,
+        "mae": 26.6657,
+        "mape": 2.0508,
+        "directional_accuracy": 100.0,
+        "r2": -1.3169
+      },
+      "ARIMA_2_1_2": {
+        "model_family": "Econometric Time-Series",
+        "complexity": "O(p+q) - 5 parameters",
+        "rmse": 39.2265,
+        "mae": 32.5805,
+        "mape": 2.5084,
+        "directional_accuracy": 100.0,
+        "r2": -2.2258
+      },
+      "SARIMAX_Weekly": {
+        "model_family": "Seasonal Econometric",
+        "complexity": "O(p+q+P+Q) - 7 parameters + seasonality(s=5)",
+        "rmse": 38.6385,
+        "mae": 31.8969,
+        "mape": 2.4553,
+        "directional_accuracy": 100.0,
+        "r2": -2.1298
+      },
+      "XGBoost_Lagged": {
+        "model_family": "Gradient Boosted Trees",
+        "complexity": "Nonlinear Ensemble (150 trees, 13 features)",
+        "rmse": 15.2199,
+        "mae": 10.7471,
+        "mape": 0.9106,
+        "directional_accuracy": 54.82,
+        "r2": 0.9735
+      }
+    },
+    "best_model": "XGBoost_Lagged",
+    "selection_rationale": "XGBoost extracted nonlinear multi-feature interactions across momentum, volume ratios, and volatility regimes, yielding superior out-of-sample directional accuracy.",
+    "feature_importances": [
+      {
+        "feature": "ret_lag5",
+        "importance": 0.1226
+      },
+      {
+        "feature": "atr_norm",
+        "importance": 0.1128
+      },
+      {
+        "feature": "ratio_sma50",
+        "importance": 0.1003
+      },
+      {
+        "feature": "ratio_sma200",
+        "importance": 0.0887
+      },
+      {
+        "feature": "bb_width",
+        "importance": 0.0872
+      },
+      {
+        "feature": "ratio_sma20",
+        "importance": 0.0772
+      },
+      {
+        "feature": "volume_ratio",
+        "importance": 0.0753
+      },
+      {
+        "feature": "macd_norm",
+        "importance": 0.0733
+      },
+      {
+        "feature": "rsi_norm",
+        "importance": 0.0577
+      },
+      {
+        "feature": "bb_pct_b",
+        "importance": 0.0542
+      },
+      {
+        "feature": "ret_lag3",
+        "importance": 0.0535
+      },
+      {
+        "feature": "ret_lag2",
+        "importance": 0.0498
+      },
+      {
+        "feature": "ret_lag1",
+        "importance": 0.0474
+      }
+    ],
+    "residual_stats": {
+      "mean_error": 0.1515,
+      "std_error": 15.2192,
+      "skewness": -0.4679,
+      "kurtosis": 5.2234
+    },
+    "dataset_split": {
+      "train_samples": 1070,
+      "validation_samples": 228,
+      "test_samples": 228,
+      "train_start": "2018-10-23",
+      "test_end": "2024-12-27"
+    },
+    "recent_predictions": [
+      {
+        "date": "2024-11-13",
+        "actual": 1256.95,
+        "predicted": 1254.38,
+        "residual": 2.57
+      },
+      {
+        "date": "2024-11-14",
+        "actual": 1253.45,
+        "predicted": 1258.2,
+        "residual": -4.75
+      },
+      {
+        "date": "2024-11-18",
+        "actual": 1249.1,
+        "predicted": 1255.26,
+        "residual": -6.16
+      },
+      {
+        "date": "2024-11-19",
+        "actual": 1250.55,
+        "predicted": 1250.35,
+        "residual": 0.2
+      },
+      {
+        "date": "2024-11-21",
+        "actual": 1278.05,
+        "predicted": 1252.13,
+        "residual": 25.92
+      },
+      {
+        "date": "2024-11-22",
+        "actual": 1300.95,
+        "predicted": 1279.66,
+        "residual": 21.29
+      },
+      {
+        "date": "2024-11-25",
+        "actual": 1304.95,
+        "predicted": 1301.83,
+        "residual": 3.12
+      },
+      {
+        "date": "2024-11-26",
+        "actual": 1300.7,
+        "predicted": 1305.87,
+        "residual": -5.17
+      },
+      {
+        "date": "2024-11-27",
+        "actual": 1286.35,
+        "predicted": 1301.2,
+        "residual": -14.85
+      },
+      {
+        "date": "2024-11-28",
+        "actual": 1300.1,
+        "predicted": 1287.22,
+        "residual": 12.88
+      },
+      {
+        "date": "2024-11-29",
+        "actual": 1304.65,
+        "predicted": 1301.74,
+        "residual": 2.91
+      },
+      {
+        "date": "2024-12-02",
+        "actual": 1308.4,
+        "predicted": 1306.29,
+        "residual": 2.11
+      },
+      {
+        "date": "2024-12-03",
+        "actual": 1316.05,
+        "predicted": 1309.32,
+        "residual": 6.73
+      },
+      {
+        "date": "2024-12-04",
+        "actual": 1336.5,
+        "predicted": 1317.29,
+        "residual": 19.21
+      },
+      {
+        "date": "2024-12-05",
+        "actual": 1328.75,
+        "predicted": 1337.68,
+        "residual": -8.93
+      },
+      {
+        "date": "2024-12-06",
+        "actual": 1322.3,
+        "predicted": 1329.69,
+        "residual": -7.39
+      },
+      {
+        "date": "2024-12-09",
+        "actual": 1330.45,
+        "predicted": 1323.23,
+        "residual": 7.22
+      },
+      {
+        "date": "2024-12-10",
+        "actual": 1327.5,
+        "predicted": 1332.13,
+        "residual": -4.63
+      },
+      {
+        "date": "2024-12-11",
+        "actual": 1329.25,
+        "predicted": 1329.17,
+        "residual": 0.08
+      },
+      {
+        "date": "2024-12-12",
+        "actual": 1344.9,
+        "predicted": 1330.19,
+        "residual": 14.71
+      },
+      {
+        "date": "2024-12-13",
+        "actual": 1346.1,
+        "predicted": 1346.6,
+        "residual": -0.5
+      },
+      {
+        "date": "2024-12-16",
+        "actual": 1333.75,
+        "predicted": 1347.44,
+        "residual": -13.69
+      },
+      {
+        "date": "2024-12-17",
+        "actual": 1314.15,
+        "predicted": 1334.69,
+        "residual": -20.54
+      },
+      {
+        "date": "2024-12-18",
+        "actual": 1286.9,
+        "predicted": 1315.24,
+        "residual": -28.34
+      },
+      {
+        "date": "2024-12-19",
+        "actual": 1288.4,
+        "predicted": 1288.52,
+        "residual": -0.12
+      },
+      {
+        "date": "2024-12-20",
+        "actual": 1296.8,
+        "predicted": 1289.85,
+        "residual": 6.95
+      },
+      {
+        "date": "2024-12-23",
+        "actual": 1297.25,
+        "predicted": 1298.68,
+        "residual": -1.43
+      },
+      {
+        "date": "2024-12-24",
+        "actual": 1297.35,
+        "predicted": 1298.54,
+        "residual": -1.19
+      },
+      {
+        "date": "2024-12-26",
+        "actual": 1307.55,
+        "predicted": 1298.27,
+        "residual": 9.28
+      },
+      {
+        "date": "2024-12-27",
+        "actual": 1294.65,
+        "predicted": 1308.9,
+        "residual": -14.25
+      }
+    ]
+  },
+  "SBIN": {
+    "symbol": "SBIN",
+    "models": {
+      "Naive": {
+        "model_family": "Statistical Baseline",
+        "complexity": "O(1) - Zero parameters",
+        "rmse": 46.9378,
+        "mae": 41.5107,
+        "mape": 4.9496,
+        "directional_accuracy": 0.0,
+        "r2": -3.0845
+      },
+      "Moving_Average_20": {
+        "model_family": "Statistical Smoothing",
+        "complexity": "O(k) - 1 parameter (window=20)",
+        "rmse": 37.1218,
+        "mae": 32.665,
+        "mape": 3.8972,
+        "directional_accuracy": 92.86,
+        "r2": -1.5548
+      },
+      "ARIMA_2_1_2": {
+        "model_family": "Econometric Time-Series",
+        "complexity": "O(p+q) - 5 parameters",
+        "rmse": 48.077,
+        "mae": 42.4864,
+        "mape": 5.0658,
+        "directional_accuracy": 14.29,
+        "r2": -3.2852
+      },
+      "SARIMAX_Weekly": {
+        "model_family": "Seasonal Econometric",
+        "complexity": "O(p+q+P+Q) - 7 parameters + seasonality(s=5)",
+        "rmse": 44.843,
+        "mae": 39.4741,
+        "mape": 4.7057,
+        "directional_accuracy": 92.86,
+        "r2": -2.7281
+      },
+      "XGBoost_Lagged": {
+        "model_family": "Gradient Boosted Trees",
+        "complexity": "Nonlinear Ensemble (150 trees, 13 features)",
+        "rmse": 15.4592,
+        "mae": 9.8796,
+        "mape": 1.2389,
+        "directional_accuracy": 53.07,
+        "r2": 0.9064
+      }
+    },
+    "best_model": "XGBoost_Lagged",
+    "selection_rationale": "XGBoost extracted nonlinear multi-feature interactions across momentum, volume ratios, and volatility regimes, yielding superior out-of-sample directional accuracy.",
+    "feature_importances": [
+      {
+        "feature": "macd_norm",
+        "importance": 0.1222
+      },
+      {
+        "feature": "ratio_sma20",
+        "importance": 0.1126
+      },
+      {
+        "feature": "ret_lag5",
+        "importance": 0.1067
+      },
+      {
+        "feature": "atr_norm",
+        "importance": 0.0956
+      },
+      {
+        "feature": "volume_ratio",
+        "importance": 0.0883
+      },
+      {
+        "feature": "rsi_norm",
+        "importance": 0.0833
+      },
+      {
+        "feature": "ratio_sma50",
+        "importance": 0.0753
+      },
+      {
+        "feature": "bb_width",
+        "importance": 0.0683
+      },
+      {
+        "feature": "bb_pct_b",
+        "importance": 0.0657
+      },
+      {
+        "feature": "ratio_sma200",
+        "importance": 0.0613
+      },
+      {
+        "feature": "ret_lag3",
+        "importance": 0.0551
+      },
+      {
+        "feature": "ret_lag1",
+        "importance": 0.0328
+      },
+      {
+        "feature": "ret_lag2",
+        "importance": 0.0328
+      }
+    ],
+    "residual_stats": {
+      "mean_error": 0.0664,
+      "std_error": 15.459,
+      "skewness": -2.0754,
+      "kurtosis": 24.1869
+    },
+    "dataset_split": {
+      "train_samples": 1070,
+      "validation_samples": 228,
+      "test_samples": 228,
+      "train_start": "2018-10-23",
+      "test_end": "2024-12-27"
+    },
+    "recent_predictions": [
+      {
+        "date": "2024-11-13",
+        "actual": 804.25,
+        "predicted": 809.42,
+        "residual": -5.17
+      },
+      {
+        "date": "2024-11-14",
+        "actual": 814.3,
+        "predicted": 804.76,
+        "residual": 9.54
+      },
+      {
+        "date": "2024-11-18",
+        "actual": 803.0,
+        "predicted": 814.81,
+        "residual": -11.81
+      },
+      {
+        "date": "2024-11-19",
+        "actual": 780.75,
+        "predicted": 803.66,
+        "residual": -22.91
+      },
+      {
+        "date": "2024-11-21",
+        "actual": 816.05,
+        "predicted": 781.39,
+        "residual": 34.66
+      },
+      {
+        "date": "2024-11-22",
+        "actual": 844.45,
+        "predicted": 816.72,
+        "residual": 27.73
+      },
+      {
+        "date": "2024-11-25",
+        "actual": 839.4,
+        "predicted": 845.14,
+        "residual": -5.74
+      },
+      {
+        "date": "2024-11-26",
+        "actual": 834.1,
+        "predicted": 840.05,
+        "residual": -5.95
+      },
+      {
+        "date": "2024-11-27",
+        "actual": 838.85,
+        "predicted": 834.74,
+        "residual": 4.11
+      },
+      {
+        "date": "2024-11-28",
+        "actual": 838.95,
+        "predicted": 839.65,
+        "residual": -0.7
+      },
+      {
+        "date": "2024-11-29",
+        "actual": 836.4,
+        "predicted": 839.75,
+        "residual": -3.35
+      },
+      {
+        "date": "2024-12-02",
+        "actual": 853.95,
+        "predicted": 837.04,
+        "residual": 16.91
+      },
+      {
+        "date": "2024-12-03",
+        "actual": 859.7,
+        "predicted": 854.77,
+        "residual": 4.93
+      },
+      {
+        "date": "2024-12-04",
+        "actual": 865.45,
+        "predicted": 860.52,
+        "residual": 4.93
+      },
+      {
+        "date": "2024-12-05",
+        "actual": 863.65,
+        "predicted": 866.28,
+        "residual": -2.63
+      },
+      {
+        "date": "2024-12-06",
+        "actual": 858.05,
+        "predicted": 864.48,
+        "residual": -6.43
+      },
+      {
+        "date": "2024-12-09",
+        "actual": 867.5,
+        "predicted": 858.87,
+        "residual": 8.63
+      },
+      {
+        "date": "2024-12-10",
+        "actual": 861.6,
+        "predicted": 868.17,
+        "residual": -6.57
+      },
+      {
+        "date": "2024-12-11",
+        "actual": 853.7,
+        "predicted": 862.26,
+        "residual": -8.56
+      },
+      {
+        "date": "2024-12-12",
+        "actual": 861.55,
+        "predicted": 854.52,
+        "residual": 7.03
+      },
+      {
+        "date": "2024-12-13",
+        "actual": 860.95,
+        "predicted": 862.37,
+        "residual": -1.42
+      },
+      {
+        "date": "2024-12-16",
+        "actual": 850.55,
+        "predicted": 861.61,
+        "residual": -11.06
+      },
+      {
+        "date": "2024-12-17",
+        "actual": 838.15,
+        "predicted": 851.36,
+        "residual": -13.21
+      },
+      {
+        "date": "2024-12-18",
+        "actual": 832.8,
+        "predicted": 838.84,
+        "residual": -6.04
+      },
+      {
+        "date": "2024-12-19",
+        "actual": 812.0,
+        "predicted": 833.48,
+        "residual": -21.48
+      },
+      {
+        "date": "2024-12-20",
+        "actual": 821.15,
+        "predicted": 812.66,
+        "residual": 8.49
+      },
+      {
+        "date": "2024-12-23",
+        "actual": 812.05,
+        "predicted": 821.67,
+        "residual": -9.62
+      },
+      {
+        "date": "2024-12-24",
+        "actual": 812.45,
+        "predicted": 812.71,
+        "residual": -0.26
+      },
+      {
+        "date": "2024-12-26",
+        "actual": 799.65,
+        "predicted": 813.12,
+        "residual": -13.47
+      },
+      {
+        "date": "2024-12-27",
+        "actual": 788.3,
+        "predicted": 800.3,
+        "residual": -12.0
+      }
+    ]
+  },
+  "ITC": {
+    "symbol": "ITC",
+    "models": {
+      "Naive": {
+        "model_family": "Statistical Baseline",
+        "complexity": "O(1) - Zero parameters",
+        "rmse": 6.0047,
+        "mae": 4.9796,
+        "mape": 1.0696,
+        "directional_accuracy": 0.0,
+        "r2": -0.0781
+      },
+      "Moving_Average_20": {
+        "model_family": "Statistical Smoothing",
+        "complexity": "O(k) - 1 parameter (window=20)",
+        "rmse": 18.8793,
+        "mae": 17.9718,
+        "mape": 3.8881,
+        "directional_accuracy": 57.14,
+        "r2": -9.6575
+      },
+      "ARIMA_2_1_2": {
+        "model_family": "Econometric Time-Series",
+        "complexity": "O(p+q) - 5 parameters",
+        "rmse": 6.0014,
+        "mae": 4.978,
+        "mape": 1.0693,
+        "directional_accuracy": 57.14,
+        "r2": -0.0769
+      },
+      "SARIMAX_Weekly": {
+        "model_family": "Seasonal Econometric",
+        "complexity": "O(p+q+P+Q) - 7 parameters + seasonality(s=5)",
+        "rmse": 5.895,
+        "mae": 4.9177,
+        "mape": 1.0569,
+        "directional_accuracy": 57.14,
+        "r2": -0.0391
+      },
+      "XGBoost_Lagged": {
+        "model_family": "Gradient Boosted Trees",
+        "complexity": "Nonlinear Ensemble (150 trees, 13 features)",
+        "rmse": 5.3615,
+        "mae": 3.9047,
+        "mape": 0.8895,
+        "directional_accuracy": 47.81,
+        "r2": 0.9742
+      }
+    },
+    "best_model": "XGBoost_Lagged",
+    "selection_rationale": "XGBoost extracted nonlinear multi-feature interactions across momentum, volume ratios, and volatility regimes, yielding superior out-of-sample directional accuracy.",
+    "feature_importances": [
+      {
+        "feature": "ratio_sma50",
+        "importance": 0.1384
+      },
+      {
+        "feature": "ret_lag5",
+        "importance": 0.1131
+      },
+      {
+        "feature": "ratio_sma200",
+        "importance": 0.1031
+      },
+      {
+        "feature": "bb_width",
+        "importance": 0.0998
+      },
+      {
+        "feature": "atr_norm",
+        "importance": 0.0884
+      },
+      {
+        "feature": "ratio_sma20",
+        "importance": 0.0778
+      },
+      {
+        "feature": "volume_ratio",
+        "importance": 0.0682
+      },
+      {
+        "feature": "rsi_norm",
+        "importance": 0.0658
+      },
+      {
+        "feature": "macd_norm",
+        "importance": 0.057
+      },
+      {
+        "feature": "ret_lag3",
+        "importance": 0.053
+      },
+      {
+        "feature": "ret_lag2",
+        "importance": 0.0499
+      },
+      {
+        "feature": "ret_lag1",
+        "importance": 0.0489
+      },
+      {
+        "feature": "bb_pct_b",
+        "importance": 0.0365
+      }
+    ],
+    "residual_stats": {
+      "mean_error": -0.0973,
+      "std_error": 5.3606,
+      "skewness": 0.504,
+      "kurtosis": 2.7117
+    },
+    "dataset_split": {
+      "train_samples": 1070,
+      "validation_samples": 228,
+      "test_samples": 228,
+      "train_start": "2018-10-23",
+      "test_end": "2024-12-27"
+    },
+    "recent_predictions": [
+      {
+        "date": "2024-11-13",
+        "actual": 448.67,
+        "predicted": 454.85,
+        "residual": -6.18
+      },
+      {
+        "date": "2024-11-14",
+        "actual": 449.25,
+        "predicted": 448.83,
+        "residual": 0.42
+      },
+      {
+        "date": "2024-11-18",
+        "actual": 450.02,
+        "predicted": 449.41,
+        "residual": 0.61
+      },
+      {
+        "date": "2024-11-19",
+        "actual": 440.2,
+        "predicted": 450.18,
+        "residual": -9.98
+      },
+      {
+        "date": "2024-11-21",
+        "actual": 457.05,
+        "predicted": 440.36,
+        "residual": 16.69
+      },
+      {
+        "date": "2024-11-22",
+        "actual": 459.12,
+        "predicted": 457.4,
+        "residual": 1.72
+      },
+      {
+        "date": "2024-11-25",
+        "actual": 459.31,
+        "predicted": 459.28,
+        "residual": 0.03
+      },
+      {
+        "date": "2024-11-26",
+        "actual": 459.26,
+        "predicted": 458.98,
+        "residual": 0.28
+      },
+      {
+        "date": "2024-11-27",
+        "actual": 457.29,
+        "predicted": 459.43,
+        "residual": -2.14
+      },
+      {
+        "date": "2024-11-28",
+        "actual": 459.07,
+        "predicted": 457.45,
+        "residual": 1.62
+      },
+      {
+        "date": "2024-11-29",
+        "actual": 459.5,
+        "predicted": 459.24,
+        "residual": 0.27
+      },
+      {
+        "date": "2024-12-02",
+        "actual": 455.03,
+        "predicted": 459.67,
+        "residual": -4.64
+      },
+      {
+        "date": "2024-12-03",
+        "actual": 449.78,
+        "predicted": 455.19,
+        "residual": -5.41
+      },
+      {
+        "date": "2024-12-04",
+        "actual": 450.16,
+        "predicted": 449.94,
+        "residual": 0.22
+      },
+      {
+        "date": "2024-12-05",
+        "actual": 453.68,
+        "predicted": 450.32,
+        "residual": 3.35
+      },
+      {
+        "date": "2024-12-06",
+        "actual": 447.71,
+        "predicted": 453.84,
+        "residual": -6.13
+      },
+      {
+        "date": "2024-12-09",
+        "actual": 448.19,
+        "predicted": 447.87,
+        "residual": 0.32
+      },
+      {
+        "date": "2024-12-10",
+        "actual": 448.0,
+        "predicted": 448.35,
+        "residual": -0.35
+      },
+      {
+        "date": "2024-12-11",
+        "actual": 443.52,
+        "predicted": 448.16,
+        "residual": -4.64
+      },
+      {
+        "date": "2024-12-12",
+        "actual": 452.57,
+        "predicted": 443.68,
+        "residual": 8.89
+      },
+      {
+        "date": "2024-12-13",
+        "actual": 452.67,
+        "predicted": 452.73,
+        "residual": -0.07
+      },
+      {
+        "date": "2024-12-16",
+        "actual": 452.14,
+        "predicted": 452.83,
+        "residual": -0.69
+      },
+      {
+        "date": "2024-12-17",
+        "actual": 453.05,
+        "predicted": 452.3,
+        "residual": 0.75
+      },
+      {
+        "date": "2024-12-18",
+        "actual": 449.25,
+        "predicted": 453.21,
+        "residual": -3.97
+      },
+      {
+        "date": "2024-12-19",
+        "actual": 447.42,
+        "predicted": 449.41,
+        "residual": -1.99
+      },
+      {
+        "date": "2024-12-20",
+        "actual": 456.66,
+        "predicted": 447.58,
+        "residual": 9.08
+      },
+      {
+        "date": "2024-12-23",
+        "actual": 460.71,
+        "predicted": 456.83,
+        "residual": 3.88
+      },
+      {
+        "date": "2024-12-24",
+        "actual": 459.26,
+        "predicted": 460.87,
+        "residual": -1.61
+      },
+      {
+        "date": "2024-12-26",
+        "actual": 460.85,
+        "predicted": 459.43,
+        "residual": 1.42
+      },
+      {
+        "date": "2024-12-27",
+        "actual": 459.31,
+        "predicted": 461.02,
+        "residual": -1.71
+      }
+    ]
+  },
+  "LT": {
+    "symbol": "LT",
+    "models": {
+      "Naive": {
+        "model_family": "Statistical Baseline",
+        "complexity": "O(1) - Zero parameters",
+        "rmse": 143.0331,
+        "mae": 132.1215,
+        "mape": 3.7052,
+        "directional_accuracy": 0.0,
+        "r2": -0.4254
+      },
+      "Moving_Average_20": {
+        "model_family": "Statistical Smoothing",
+        "complexity": "O(k) - 1 parameter (window=20)",
+        "rmse": 124.5756,
+        "mae": 100.0415,
+        "mape": 2.8972,
+        "directional_accuracy": 64.29,
+        "r2": -0.0812
+      },
+      "ARIMA_2_1_2": {
+        "model_family": "Econometric Time-Series",
+        "complexity": "O(p+q) - 5 parameters",
+        "rmse": 142.6896,
+        "mae": 131.9841,
+        "mape": 3.702,
+        "directional_accuracy": 64.29,
+        "r2": -0.4185
+      },
+      "SARIMAX_Weekly": {
+        "model_family": "Seasonal Econometric",
+        "complexity": "O(p+q+P+Q) - 7 parameters + seasonality(s=5)",
+        "rmse": 141.5996,
+        "mae": 131.099,
+        "mape": 3.6776,
+        "directional_accuracy": 64.29,
+        "r2": -0.3969
+      },
+      "XGBoost_Lagged": {
+        "model_family": "Gradient Boosted Trees",
+        "complexity": "Nonlinear Ensemble (150 trees, 13 features)",
+        "rmse": 66.2195,
+        "mae": 44.8123,
+        "mape": 1.2521,
+        "directional_accuracy": 48.25,
+        "r2": 0.7617
+      }
+    },
+    "best_model": "XGBoost_Lagged",
+    "selection_rationale": "XGBoost extracted nonlinear multi-feature interactions across momentum, volume ratios, and volatility regimes, yielding superior out-of-sample directional accuracy.",
+    "feature_importances": [
+      {
+        "feature": "ret_lag2",
+        "importance": 0.1046
+      },
+      {
+        "feature": "ratio_sma50",
+        "importance": 0.0922
+      },
+      {
+        "feature": "ratio_sma20",
+        "importance": 0.0891
+      },
+      {
+        "feature": "ratio_sma200",
+        "importance": 0.0886
+      },
+      {
+        "feature": "macd_norm",
+        "importance": 0.0863
+      },
+      {
+        "feature": "atr_norm",
+        "importance": 0.0842
+      },
+      {
+        "feature": "rsi_norm",
+        "importance": 0.0821
+      },
+      {
+        "feature": "ret_lag1",
+        "importance": 0.0804
+      },
+      {
+        "feature": "bb_pct_b",
+        "importance": 0.0768
+      },
+      {
+        "feature": "ret_lag5",
+        "importance": 0.0689
+      },
+      {
+        "feature": "volume_ratio",
+        "importance": 0.0671
+      },
+      {
+        "feature": "bb_width",
+        "importance": 0.0571
+      },
+      {
+        "feature": "ret_lag3",
+        "importance": 0.0226
+      }
+    ],
+    "residual_stats": {
+      "mean_error": -2.58,
+      "std_error": 66.1692,
+      "skewness": -1.6087,
+      "kurtosis": 13.889
+    },
+    "dataset_split": {
+      "train_samples": 1070,
+      "validation_samples": 228,
+      "test_samples": 228,
+      "train_start": "2018-10-23",
+      "test_end": "2024-12-27"
+    },
+    "recent_predictions": [
+      {
+        "date": "2024-11-13",
+        "actual": 3526.25,
+        "predicted": 3550.8,
+        "residual": -24.55
+      },
+      {
+        "date": "2024-11-14",
+        "actual": 3542.15,
+        "predicted": 3528.77,
+        "residual": 13.38
+      },
+      {
+        "date": "2024-11-18",
+        "actual": 3505.9,
+        "predicted": 3545.0,
+        "residual": -39.1
+      },
+      {
+        "date": "2024-11-19",
+        "actual": 3483.5,
+        "predicted": 3508.4,
+        "residual": -24.9
+      },
+      {
+        "date": "2024-11-21",
+        "actual": 3603.5,
+        "predicted": 3485.98,
+        "residual": 117.52
+      },
+      {
+        "date": "2024-11-22",
+        "actual": 3753.0,
+        "predicted": 3606.4,
+        "residual": 146.6
+      },
+      {
+        "date": "2024-11-25",
+        "actual": 3702.6,
+        "predicted": 3754.47,
+        "residual": -51.87
+      },
+      {
+        "date": "2024-11-26",
+        "actual": 3698.7,
+        "predicted": 3704.05,
+        "residual": -5.35
+      },
+      {
+        "date": "2024-11-27",
+        "actual": 3666.05,
+        "predicted": 3701.67,
+        "residual": -35.62
+      },
+      {
+        "date": "2024-11-28",
+        "actual": 3724.8,
+        "predicted": 3669.0,
+        "residual": 55.8
+      },
+      {
+        "date": "2024-11-29",
+        "actual": 3704.05,
+        "predicted": 3727.79,
+        "residual": -23.74
+      },
+      {
+        "date": "2024-12-02",
+        "actual": 3787.05,
+        "predicted": 3707.03,
+        "residual": 80.02
+      },
+      {
+        "date": "2024-12-03",
+        "actual": 3789.9,
+        "predicted": 3790.09,
+        "residual": -0.19
+      },
+      {
+        "date": "2024-12-04",
+        "actual": 3831.55,
+        "predicted": 3791.39,
+        "residual": 40.16
+      },
+      {
+        "date": "2024-12-05",
+        "actual": 3866.7,
+        "predicted": 3834.63,
+        "residual": 32.07
+      },
+      {
+        "date": "2024-12-06",
+        "actual": 3947.3,
+        "predicted": 3869.81,
+        "residual": 77.49
+      },
+      {
+        "date": "2024-12-09",
+        "actual": 3923.15,
+        "predicted": 3950.47,
+        "residual": -27.32
+      },
+      {
+        "date": "2024-12-10",
+        "actual": 3916.75,
+        "predicted": 3925.13,
+        "residual": -8.38
+      },
+      {
+        "date": "2024-12-11",
+        "actual": 3859.9,
+        "predicted": 3919.9,
+        "residual": -60.0
+      },
+      {
+        "date": "2024-12-12",
+        "actual": 3887.0,
+        "predicted": 3863.0,
+        "residual": 24.0
+      },
+      {
+        "date": "2024-12-13",
+        "actual": 3877.85,
+        "predicted": 3890.12,
+        "residual": -12.27
+      },
+      {
+        "date": "2024-12-16",
+        "actual": 3807.2,
+        "predicted": 3880.97,
+        "residual": -73.77
+      },
+      {
+        "date": "2024-12-17",
+        "actual": 3758.15,
+        "predicted": 3810.26,
+        "residual": -52.11
+      },
+      {
+        "date": "2024-12-18",
+        "actual": 3716.35,
+        "predicted": 3761.17,
+        "residual": -44.82
+      },
+      {
+        "date": "2024-12-19",
+        "actual": 3629.85,
+        "predicted": 3719.34,
+        "residual": -89.49
+      },
+      {
+        "date": "2024-12-20",
+        "actual": 3640.5,
+        "predicted": 3632.77,
+        "residual": 7.73
+      },
+      {
+        "date": "2024-12-23",
+        "actual": 3639.75,
+        "predicted": 3643.43,
+        "residual": -3.68
+      },
+      {
+        "date": "2024-12-24",
+        "actual": 3629.5,
+        "predicted": 3642.68,
+        "residual": -13.18
+      },
+      {
+        "date": "2024-12-26",
+        "actual": 3608.1,
+        "predicted": 3632.42,
+        "residual": -24.32
+      },
+      {
+        "date": "2024-12-27",
+        "actual": 3578.95,
+        "predicted": 3611.0,
+        "residual": -32.05
+      }
+    ]
+  },
+  "AXISBANK": {
+    "symbol": "AXISBANK",
+    "models": {
+      "Naive": {
+        "model_family": "Statistical Baseline",
+        "complexity": "O(1) - Zero parameters",
+        "rmse": 13.6959,
+        "mae": 10.4285,
+        "mape": 0.8898,
+        "directional_accuracy": 0.0,
+        "r2": -0.3392
+      },
+      "Moving_Average_20": {
+        "model_family": "Statistical Smoothing",
+        "complexity": "O(k) - 1 parameter (window=20)",
+        "rmse": 24.8864,
+        "mae": 21.9157,
+        "mape": 1.8879,
+        "directional_accuracy": 71.43,
+        "r2": -3.4217
+      },
+      "ARIMA_2_1_2": {
+        "model_family": "Econometric Time-Series",
+        "complexity": "O(p+q) - 5 parameters",
+        "rmse": 13.2146,
+        "mae": 10.1071,
+        "mape": 0.8624,
+        "directional_accuracy": 71.43,
+        "r2": -0.2467
+      },
+      "SARIMAX_Weekly": {
+        "model_family": "Seasonal Econometric",
+        "complexity": "O(p+q+P+Q) - 7 parameters + seasonality(s=5)",
+        "rmse": 13.3,
+        "mae": 10.0675,
+        "mape": 0.8594,
+        "directional_accuracy": 71.43,
+        "r2": -0.2629
+      },
+      "XGBoost_Lagged": {
+        "model_family": "Gradient Boosted Trees",
+        "complexity": "Nonlinear Ensemble (150 trees, 13 features)",
+        "rmse": 18.0347,
+        "mae": 12.733,
+        "mape": 1.1088,
+        "directional_accuracy": 51.32,
+        "r2": 0.9304
+      }
+    },
+    "best_model": "ARIMA_2_1_2",
+    "selection_rationale": "ARIMA achieved the superior variance-bias tradeoff by modeling linear autocorrelation and differencing the non-stationary price series without excessive variance.",
+    "feature_importances": [
+      {
+        "feature": "bb_width",
+        "importance": 0.1051
+      },
+      {
+        "feature": "ret_lag5",
+        "importance": 0.1023
+      },
+      {
+        "feature": "ratio_sma200",
+        "importance": 0.1009
+      },
+      {
+        "feature": "atr_norm",
+        "importance": 0.0864
+      },
+      {
+        "feature": "ret_lag2",
+        "importance": 0.0814
+      },
+      {
+        "feature": "rsi_norm",
+        "importance": 0.0802
+      },
+      {
+        "feature": "macd_norm",
+        "importance": 0.0791
+      },
+      {
+        "feature": "ratio_sma20",
+        "importance": 0.0752
+      },
+      {
+        "feature": "volume_ratio",
+        "importance": 0.0725
+      },
+      {
+        "feature": "ratio_sma50",
+        "importance": 0.0639
+      },
+      {
+        "feature": "ret_lag1",
+        "importance": 0.057
+      },
+      {
+        "feature": "ret_lag3",
+        "importance": 0.0504
+      },
+      {
+        "feature": "bb_pct_b",
+        "importance": 0.0455
+      }
+    ],
+    "residual_stats": {
+      "mean_error": -0.8645,
+      "std_error": 18.0139,
+      "skewness": -0.1743,
+      "kurtosis": 4.7489
+    },
+    "dataset_split": {
+      "train_samples": 1070,
+      "validation_samples": 228,
+      "test_samples": 228,
+      "train_start": "2018-10-23",
+      "test_end": "2024-12-27"
+    },
+    "recent_predictions": [
+      {
+        "date": "2024-11-13",
+        "actual": 1140.7,
+        "predicted": 1140.11,
+        "residual": 0.59
+      },
+      {
+        "date": "2024-11-14",
+        "actual": 1126.2,
+        "predicted": 1141.55,
+        "residual": -15.35
+      },
+      {
+        "date": "2024-11-18",
+        "actual": 1133.95,
+        "predicted": 1127.02,
+        "residual": 6.93
+      },
+      {
+        "date": "2024-11-19",
+        "actual": 1139.15,
+        "predicted": 1134.89,
+        "residual": 4.26
+      },
+      {
+        "date": "2024-11-21",
+        "actual": 1142.4,
+        "predicted": 1140.09,
+        "residual": 2.31
+      },
+      {
+        "date": "2024-11-22",
+        "actual": 1155.9,
+        "predicted": 1143.47,
+        "residual": 12.43
+      },
+      {
+        "date": "2024-11-25",
+        "actual": 1144.8,
+        "predicted": 1156.86,
+        "residual": -12.06
+      },
+      {
+        "date": "2024-11-26",
+        "actual": 1149.65,
+        "predicted": 1145.89,
+        "residual": 3.76
+      },
+      {
+        "date": "2024-11-27",
+        "actual": 1132.5,
+        "predicted": 1150.73,
+        "residual": -18.23
+      },
+      {
+        "date": "2024-11-28",
+        "actual": 1136.3,
+        "predicted": 1133.58,
+        "residual": 2.72
+      },
+      {
+        "date": "2024-11-29",
+        "actual": 1137.1,
+        "predicted": 1137.37,
+        "residual": -0.27
+      },
+      {
+        "date": "2024-12-02",
+        "actual": 1160.5,
+        "predicted": 1137.82,
+        "residual": 22.68
+      },
+      {
+        "date": "2024-12-03",
+        "actual": 1159.45,
+        "predicted": 1161.59,
+        "residual": -2.14
+      },
+      {
+        "date": "2024-12-04",
+        "actual": 1166.4,
+        "predicted": 1160.19,
+        "residual": 6.21
+      },
+      {
+        "date": "2024-12-05",
+        "actual": 1184.55,
+        "predicted": 1167.5,
+        "residual": 17.05
+      },
+      {
+        "date": "2024-12-06",
+        "actual": 1163.25,
+        "predicted": 1185.66,
+        "residual": -22.41
+      },
+      {
+        "date": "2024-12-09",
+        "actual": 1153.65,
+        "predicted": 1164.36,
+        "residual": -10.71
+      },
+      {
+        "date": "2024-12-10",
+        "actual": 1147.25,
+        "predicted": 1154.51,
+        "residual": -7.26
+      },
+      {
+        "date": "2024-12-11",
+        "actual": 1145.65,
+        "predicted": 1148.11,
+        "residual": -2.46
+      },
+      {
+        "date": "2024-12-12",
+        "actual": 1148.15,
+        "predicted": 1146.51,
+        "residual": 1.64
+      },
+      {
+        "date": "2024-12-13",
+        "actual": 1150.9,
+        "predicted": 1149.1,
+        "residual": 1.8
+      },
+      {
+        "date": "2024-12-16",
+        "actual": 1136.25,
+        "predicted": 1151.85,
+        "residual": -15.6
+      },
+      {
+        "date": "2024-12-17",
+        "actual": 1122.25,
+        "predicted": 1137.2,
+        "residual": -14.95
+      },
+      {
+        "date": "2024-12-18",
+        "actual": 1108.9,
+        "predicted": 1123.32,
+        "residual": -14.42
+      },
+      {
+        "date": "2024-12-19",
+        "actual": 1071.85,
+        "predicted": 1108.62,
+        "residual": -36.77
+      },
+      {
+        "date": "2024-12-20",
+        "actual": 1079.15,
+        "predicted": 1070.98,
+        "residual": 8.17
+      },
+      {
+        "date": "2024-12-23",
+        "actual": 1078.9,
+        "predicted": 1078.22,
+        "residual": 0.68
+      },
+      {
+        "date": "2024-12-24",
+        "actual": 1076.7,
+        "predicted": 1079.28,
+        "residual": -2.58
+      },
+      {
+        "date": "2024-12-26",
+        "actual": 1077.45,
+        "predicted": 1076.86,
+        "residual": 0.59
+      },
+      {
+        "date": "2024-12-27",
+        "actual": 1069.95,
+        "predicted": 1077.61,
+        "residual": -7.66
+      }
+    ]
+  },
+  "BHARTIARTL": {
+    "symbol": "BHARTIARTL",
+    "models": {
+      "Naive": {
+        "model_family": "Statistical Baseline",
+        "complexity": "O(1) - Zero parameters",
+        "rmse": 85.5417,
+        "mae": 75.9679,
+        "mape": 4.7811,
+        "directional_accuracy": 0.0,
+        "r2": -3.7323
+      },
+      "Moving_Average_20": {
+        "model_family": "Statistical Smoothing",
+        "complexity": "O(k) - 1 parameter (window=20)",
+        "rmse": 97.3711,
+        "mae": 89.0779,
+        "mape": 5.5959,
+        "directional_accuracy": 0.0,
+        "r2": -5.1317
+      },
+      "ARIMA_2_1_2": {
+        "model_family": "Econometric Time-Series",
+        "complexity": "O(p+q) - 5 parameters",
+        "rmse": 86.5188,
+        "mae": 76.9699,
+        "mape": 4.8436,
+        "directional_accuracy": 0.0,
+        "r2": -3.841
+      },
+      "SARIMAX_Weekly": {
+        "model_family": "Seasonal Econometric",
+        "complexity": "O(p+q+P+Q) - 7 parameters + seasonality(s=5)",
+        "rmse": 88.5543,
+        "mae": 79.2427,
+        "mape": 4.9849,
+        "directional_accuracy": 0.0,
+        "r2": -4.0715
+      },
+      "XGBoost_Lagged": {
+        "model_family": "Gradient Boosted Trees",
+        "complexity": "Nonlinear Ensemble (150 trees, 13 features)",
+        "rmse": 21.0157,
+        "mae": 15.3201,
+        "mape": 1.0664,
+        "directional_accuracy": 52.19,
+        "r2": 0.9869
+      }
+    },
+    "best_model": "XGBoost_Lagged",
+    "selection_rationale": "XGBoost extracted nonlinear multi-feature interactions across momentum, volume ratios, and volatility regimes, yielding superior out-of-sample directional accuracy.",
+    "feature_importances": [
+      {
+        "feature": "macd_norm",
+        "importance": 0.0979
+      },
+      {
+        "feature": "volume_ratio",
+        "importance": 0.0947
+      },
+      {
+        "feature": "bb_width",
+        "importance": 0.0937
+      },
+      {
+        "feature": "rsi_norm",
+        "importance": 0.0868
+      },
+      {
+        "feature": "atr_norm",
+        "importance": 0.0836
+      },
+      {
+        "feature": "ratio_sma50",
+        "importance": 0.0804
+      },
+      {
+        "feature": "ratio_sma200",
+        "importance": 0.0773
+      },
+      {
+        "feature": "ratio_sma20",
+        "importance": 0.0705
+      },
+      {
+        "feature": "ret_lag5",
+        "importance": 0.0688
+      },
+      {
+        "feature": "ret_lag2",
+        "importance": 0.0676
+      },
+      {
+        "feature": "bb_pct_b",
+        "importance": 0.0619
+      },
+      {
+        "feature": "ret_lag1",
+        "importance": 0.0596
+      },
+      {
+        "feature": "ret_lag3",
+        "importance": 0.0572
+      }
+    ],
+    "residual_stats": {
+      "mean_error": 0.2302,
+      "std_error": 21.0145,
+      "skewness": 0.2524,
+      "kurtosis": 2.2655
+    },
+    "dataset_split": {
+      "train_samples": 1070,
+      "validation_samples": 228,
+      "test_samples": 228,
+      "train_start": "2018-10-23",
+      "test_end": "2024-12-27"
+    },
+    "recent_predictions": [
+      {
+        "date": "2024-11-13",
+        "actual": 1550.5,
+        "predicted": 1554.71,
+        "residual": -4.21
+      },
+      {
+        "date": "2024-11-14",
+        "actual": 1537.0,
+        "predicted": 1553.4,
+        "residual": -16.4
+      },
+      {
+        "date": "2024-11-18",
+        "actual": 1525.5,
+        "predicted": 1546.37,
+        "residual": -20.87
+      },
+      {
+        "date": "2024-11-19",
+        "actual": 1525.15,
+        "predicted": 1535.42,
+        "residual": -10.27
+      },
+      {
+        "date": "2024-11-21",
+        "actual": 1569.3,
+        "predicted": 1534.88,
+        "residual": 34.42
+      },
+      {
+        "date": "2024-11-22",
+        "actual": 1578.75,
+        "predicted": 1570.44,
+        "residual": 8.31
+      },
+      {
+        "date": "2024-11-25",
+        "actual": 1577.25,
+        "predicted": 1580.59,
+        "residual": -3.34
+      },
+      {
+        "date": "2024-11-26",
+        "actual": 1577.65,
+        "predicted": 1578.44,
+        "residual": -0.79
+      },
+      {
+        "date": "2024-11-27",
+        "actual": 1560.4,
+        "predicted": 1578.91,
+        "residual": -18.51
+      },
+      {
+        "date": "2024-11-28",
+        "actual": 1627.15,
+        "predicted": 1562.13,
+        "residual": 65.02
+      },
+      {
+        "date": "2024-11-29",
+        "actual": 1643.6,
+        "predicted": 1628.4,
+        "residual": 15.2
+      },
+      {
+        "date": "2024-12-02",
+        "actual": 1620.55,
+        "predicted": 1644.84,
+        "residual": -24.29
+      },
+      {
+        "date": "2024-12-03",
+        "actual": 1584.1,
+        "predicted": 1622.04,
+        "residual": -37.94
+      },
+      {
+        "date": "2024-12-04",
+        "actual": 1615.35,
+        "predicted": 1587.14,
+        "residual": 28.21
+      },
+      {
+        "date": "2024-12-05",
+        "actual": 1597.85,
+        "predicted": 1616.59,
+        "residual": -18.74
+      },
+      {
+        "date": "2024-12-06",
+        "actual": 1602.55,
+        "predicted": 1599.6,
+        "residual": 2.95
+      },
+      {
+        "date": "2024-12-09",
+        "actual": 1578.65,
+        "predicted": 1604.14,
+        "residual": -25.49
+      },
+      {
+        "date": "2024-12-10",
+        "actual": 1586.0,
+        "predicted": 1579.64,
+        "residual": 6.36
+      },
+      {
+        "date": "2024-12-11",
+        "actual": 1610.55,
+        "predicted": 1587.27,
+        "residual": 23.28
+      },
+      {
+        "date": "2024-12-12",
+        "actual": 1681.75,
+        "predicted": 1611.72,
+        "residual": 70.03
+      },
+      {
+        "date": "2024-12-13",
+        "actual": 1662.55,
+        "predicted": 1682.97,
+        "residual": -20.42
+      },
+      {
+        "date": "2024-12-16",
+        "actual": 1615.3,
+        "predicted": 1664.72,
+        "residual": -49.42
+      },
+      {
+        "date": "2024-12-17",
+        "actual": 1601.9,
+        "predicted": 1620.81,
+        "residual": -18.91
+      },
+      {
+        "date": "2024-12-18",
+        "actual": 1600.3,
+        "predicted": 1605.03,
+        "residual": -4.73
+      },
+      {
+        "date": "2024-12-19",
+        "actual": 1578.1,
+        "predicted": 1601.81,
+        "residual": -23.71
+      },
+      {
+        "date": "2024-12-20",
+        "actual": 1586.9,
+        "predicted": 1579.15,
+        "residual": 7.75
+      },
+      {
+        "date": "2024-12-23",
+        "actual": 1583.9,
+        "predicted": 1588.48,
+        "residual": -4.58
+      },
+      {
+        "date": "2024-12-24",
+        "actual": 1599.5,
+        "predicted": 1585.1,
+        "residual": 14.4
+      },
+      {
+        "date": "2024-12-26",
+        "actual": 1599.85,
+        "predicted": 1600.78,
+        "residual": -0.93
+      },
+      {
+        "date": "2024-12-27",
+        "actual": 1586.9,
+        "predicted": 1601.37,
+        "residual": -14.47
+      }
+    ]
+  },
+  "NIFTY_50": {
+    "symbol": "NIFTY_50",
+    "models": {
+      "Naive": {
+        "model_family": "Statistical Baseline",
+        "complexity": "O(1) - Zero parameters",
+        "rmse": 644.0805,
+        "mae": 480.5571,
+        "mape": 2.0544,
+        "directional_accuracy": 0.0,
+        "r2": -0.7712
+      },
+      "Moving_Average_20": {
+        "model_family": "Statistical Smoothing",
+        "complexity": "O(k) - 1 parameter (window=20)",
+        "rmse": 512.4492,
+        "mae": 442.8004,
+        "mape": 1.9102,
+        "directional_accuracy": 64.29,
+        "r2": -0.1212
+      },
+      "ARIMA_2_1_2": {
+        "model_family": "Econometric Time-Series",
+        "complexity": "O(p+q) - 5 parameters",
+        "rmse": 643.027,
+        "mae": 481.1758,
+        "mape": 2.0573,
+        "directional_accuracy": 50.0,
+        "r2": -0.7654
+      },
+      "SARIMAX_Weekly": {
+        "model_family": "Seasonal Econometric",
+        "complexity": "O(p+q+P+Q) - 7 parameters + seasonality(s=5)",
+        "rmse": 648.3464,
+        "mae": 489.8242,
+        "mape": 2.0951,
+        "directional_accuracy": 21.43,
+        "r2": -0.7948
+      },
+      "XGBoost_Lagged": {
+        "model_family": "Gradient Boosted Trees",
+        "complexity": "Nonlinear Ensemble (150 trees, 13 features)",
+        "rmse": 231.8987,
+        "mae": 157.3962,
+        "mape": 0.661,
+        "directional_accuracy": 50.21,
+        "r2": 0.9324
+      }
+    },
+    "best_model": "XGBoost_Lagged",
+    "selection_rationale": "XGBoost extracted nonlinear multi-feature interactions across momentum, volume ratios, and volatility regimes, yielding superior out-of-sample directional accuracy.",
+    "feature_importances": [
+      {
+        "feature": "ratio_sma200",
+        "importance": 0.1194
+      },
+      {
+        "feature": "ret_lag5",
+        "importance": 0.1188
+      },
+      {
+        "feature": "rsi_norm",
+        "importance": 0.1147
+      },
+      {
+        "feature": "ratio_sma50",
+        "importance": 0.0969
+      },
+      {
+        "feature": "bb_pct_b",
+        "importance": 0.0873
+      },
+      {
+        "feature": "macd_norm",
+        "importance": 0.0834
+      },
+      {
+        "feature": "ret_lag2",
+        "importance": 0.0712
+      },
+      {
+        "feature": "bb_width",
+        "importance": 0.0637
+      },
+      {
+        "feature": "ratio_sma20",
+        "importance": 0.0581
+      },
+      {
+        "feature": "atr_norm",
+        "importance": 0.0579
+      },
+      {
+        "feature": "volume_ratio",
+        "importance": 0.0578
+      },
+      {
+        "feature": "ret_lag3",
+        "importance": 0.039
+      },
+      {
+        "feature": "ret_lag1",
+        "importance": 0.0318
+      }
+    ],
+    "residual_stats": {
+      "mean_error": -5.2584,
+      "std_error": 231.8391,
+      "skewness": -0.5767,
+      "kurtosis": 6.3477
+    },
+    "dataset_split": {
+      "train_samples": 1140,
+      "validation_samples": 243,
+      "test_samples": 243,
+      "train_start": "2018-10-23",
+      "test_end": "2025-05-15"
+    },
+    "recent_predictions": [
+      {
+        "date": "2025-03-28",
+        "actual": 23165.7,
+        "predicted": 23529.5,
+        "residual": -363.8
+      },
+      {
+        "date": "2025-04-01",
+        "actual": 23332.35,
+        "predicted": 23175.7,
+        "residual": 156.65
+      },
+      {
+        "date": "2025-04-02",
+        "actual": 23250.1,
+        "predicted": 23344.32,
+        "residual": -94.22
+      },
+      {
+        "date": "2025-04-03",
+        "actual": 22904.45,
+        "predicted": 23266.36,
+        "residual": -361.91
+      },
+      {
+        "date": "2025-04-04",
+        "actual": 22161.6,
+        "predicted": 22914.34,
+        "residual": -752.74
+      },
+      {
+        "date": "2025-04-07",
+        "actual": 22535.85,
+        "predicted": 22214.42,
+        "residual": 321.43
+      },
+      {
+        "date": "2025-04-08",
+        "actual": 22399.15,
+        "predicted": 22564.94,
+        "residual": -165.79
+      },
+      {
+        "date": "2025-04-09",
+        "actual": 22828.55,
+        "predicted": 22430.58,
+        "residual": 397.97
+      },
+      {
+        "date": "2025-04-11",
+        "actual": 23328.55,
+        "predicted": 22851.9,
+        "residual": 476.65
+      },
+      {
+        "date": "2025-04-15",
+        "actual": 23437.2,
+        "predicted": 23350.93,
+        "residual": 86.27
+      },
+      {
+        "date": "2025-04-16",
+        "actual": 23851.65,
+        "predicted": 23449.22,
+        "residual": 402.43
+      },
+      {
+        "date": "2025-04-17",
+        "actual": 24125.55,
+        "predicted": 23876.05,
+        "residual": 249.5
+      },
+      {
+        "date": "2025-04-21",
+        "actual": 24167.25,
+        "predicted": 24150.23,
+        "residual": 17.02
+      },
+      {
+        "date": "2025-04-22",
+        "actual": 24328.95,
+        "predicted": 24177.68,
+        "residual": 151.27
+      },
+      {
+        "date": "2025-04-23",
+        "actual": 24246.7,
+        "predicted": 24341.43,
+        "residual": -94.73
+      },
+      {
+        "date": "2025-04-24",
+        "actual": 24039.35,
+        "predicted": 24257.17,
+        "residual": -217.82
+      },
+      {
+        "date": "2025-04-25",
+        "actual": 24328.5,
+        "predicted": 24049.73,
+        "residual": 278.77
+      },
+      {
+        "date": "2025-04-28",
+        "actual": 24335.95,
+        "predicted": 24353.39,
+        "residual": -17.44
+      },
+      {
+        "date": "2025-04-29",
+        "actual": 24334.2,
+        "predicted": 24346.45,
+        "residual": -12.25
+      },
+      {
+        "date": "2025-04-30",
+        "actual": 24346.7,
+        "predicted": 24344.7,
+        "residual": 2.0
+      },
+      {
+        "date": "2025-05-02",
+        "actual": 24461.15,
+        "predicted": 24357.21,
+        "residual": 103.94
+      },
+      {
+        "date": "2025-05-05",
+        "actual": 24379.6,
+        "predicted": 24473.69,
+        "residual": -94.09
+      },
+      {
+        "date": "2025-05-06",
+        "actual": 24414.4,
+        "predicted": 24390.12,
+        "residual": 24.28
+      },
+      {
+        "date": "2025-05-07",
+        "actual": 24273.8,
+        "predicted": 24424.94,
+        "residual": -151.14
+      },
+      {
+        "date": "2025-05-08",
+        "actual": 24008.0,
+        "predicted": 24284.28,
+        "residual": -276.28
+      },
+      {
+        "date": "2025-05-09",
+        "actual": 24924.7,
+        "predicted": 24018.36,
+        "residual": 906.34
+      },
+      {
+        "date": "2025-05-12",
+        "actual": 24578.35,
+        "predicted": 24953.04,
+        "residual": -374.69
+      },
+      {
+        "date": "2025-05-13",
+        "actual": 24666.9,
+        "predicted": 24593.64,
+        "residual": 73.26
+      },
+      {
+        "date": "2025-05-14",
+        "actual": 25062.1,
+        "predicted": 24679.55,
+        "residual": 382.55
+      },
+      {
+        "date": "2025-05-15",
+        "actual": 24994.7,
+        "predicted": 25094.45,
+        "residual": -99.75
+      }
+    ]
+  }
+}

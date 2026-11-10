@@ -1,0 +1,407 @@
+{
+  "RELIANCE": {
+    "symbol": "RELIANCE",
+    "initial_rows": 1726,
+    "cleaned_rows": 1726,
+    "start_date": "2018-01-01",
+    "end_date": "2024-12-30",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 0,
+    "mean_daily_return": 0.0007846567930453246,
+    "annualized_volatility": 0.2892575983966959
+  },
+  "TCS": {
+    "symbol": "TCS",
+    "initial_rows": 1726,
+    "cleaned_rows": 1726,
+    "start_date": "2018-01-01",
+    "end_date": "2024-12-30",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 0,
+    "mean_daily_return": 0.0007822996828418057,
+    "annualized_volatility": 0.24449499243666686
+  },
+  "INFY": {
+    "symbol": "INFY",
+    "initial_rows": 1726,
+    "cleaned_rows": 1726,
+    "start_date": "2018-01-01",
+    "end_date": "2024-12-30",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 0,
+    "mean_daily_return": 0.0009062822150214229,
+    "annualized_volatility": 0.27409962571816315
+  },
+  "HDFCBANK": {
+    "symbol": "HDFCBANK",
+    "initial_rows": 1726,
+    "cleaned_rows": 1726,
+    "start_date": "2018-01-01",
+    "end_date": "2024-12-30",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 0,
+    "mean_daily_return": 0.0005017484894555508,
+    "annualized_volatility": 0.2503620200034212
+  },
+  "ICICIBANK": {
+    "symbol": "ICICIBANK",
+    "initial_rows": 1726,
+    "cleaned_rows": 1726,
+    "start_date": "2018-01-01",
+    "end_date": "2024-12-30",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 0,
+    "mean_daily_return": 0.0010219721523319427,
+    "annualized_volatility": 0.3123464236709485
+  },
+  "SBIN": {
+    "symbol": "SBIN",
+    "initial_rows": 1726,
+    "cleaned_rows": 1726,
+    "start_date": "2018-01-01",
+    "end_date": "2024-12-30",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 0,
+    "mean_daily_return": 0.0007645151030934159,
+    "annualized_volatility": 0.33127336310404604
+  },
+  "ITC": {
+    "symbol": "ITC",
+    "initial_rows": 1726,
+    "cleaned_rows": 1726,
+    "start_date": "2018-01-01",
+    "end_date": "2024-12-30",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 0,
+    "mean_daily_return": 0.000468174445057519,
+    "annualized_volatility": 0.24711953151625426
+  },
+  "LT": {
+    "symbol": "LT",
+    "initial_rows": 1726,
+    "cleaned_rows": 1726,
+    "start_date": "2018-01-01",
+    "end_date": "2024-12-30",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 0,
+    "mean_daily_return": 0.0007547765837268755,
+    "annualized_volatility": 0.27444025601070754
+  },
+  "AXISBANK": {
+    "symbol": "AXISBANK",
+    "initial_rows": 1726,
+    "cleaned_rows": 1726,
+    "start_date": "2018-01-01",
+    "end_date": "2024-12-30",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 1,
+    "zero_volume_days": 0,
+    "mean_daily_return": 0.0006092962993140161,
+    "annualized_volatility": 0.344997066076592
+  },
+  "BHARTIARTL": {
+    "symbol": "BHARTIARTL",
+    "initial_rows": 1726,
+    "cleaned_rows": 1726,
+    "start_date": "2018-01-01",
+    "end_date": "2024-12-30",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 0,
+    "mean_daily_return": 0.0008819065380570171,
+    "annualized_volatility": 0.30529399159622733
+  },
+  "NIFTY 50": {
+    "symbol": "NIFTY 50",
+    "initial_rows": 1826,
+    "cleaned_rows": 1826,
+    "start_date": "2018-01-01",
+    "end_date": "2025-05-16",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 0,
+    "mean_daily_return": 0.0005400521036835393,
+    "annualized_volatility": 0.17544135570994107
+  },
+  "NIFTY BANK": {
+    "symbol": "NIFTY BANK",
+    "initial_rows": 1825,
+    "cleaned_rows": 1825,
+    "start_date": "2018-01-01",
+    "end_date": "2025-05-16",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 1825,
+    "mean_daily_return": 0.00048686370536753535,
+    "annualized_volatility": 0.23983116460203388
+  },
+  "NIFTY IT": {
+    "symbol": "NIFTY IT",
+    "initial_rows": 1825,
+    "cleaned_rows": 1825,
+    "start_date": "2018-01-01",
+    "end_date": "2025-05-16",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 1825,
+    "mean_daily_return": 0.0007508320950832889,
+    "annualized_volatility": 0.22371969018691637
+  },
+  "NIFTY NEXT 50": {
+    "symbol": "NIFTY NEXT 50",
+    "initial_rows": 1825,
+    "cleaned_rows": 1825,
+    "start_date": "2018-01-01",
+    "end_date": "2025-05-16",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 0,
+    "zero_volume_days": 1825,
+    "mean_daily_return": 0.0004956170450009233,
+    "annualized_volatility": 0.19051800849394543
+  },
+  "INDIA VIX": {
+    "symbol": "INDIA VIX",
+    "initial_rows": 1825,
+    "cleaned_rows": 1825,
+    "start_date": "2018-01-01",
+    "end_date": "2025-05-16",
+    "null_dates": 0,
+    "duplicates_removed": 0,
+    "null_prices_repaired": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_violations_repaired": {
+      "high_less_than_low": 0,
+      "high_less_than_open": 0,
+      "high_less_than_close": 0,
+      "low_greater_than_open": 0,
+      "low_greater_than_close": 0,
+      "negative_volume": 0
+    },
+    "extreme_returns_count": 10,
+    "zero_volume_days": 1825,
+    "mean_daily_return": 0.001591024417566697,
+    "annualized_volatility": 0.8822167578450195
+  }
+}
