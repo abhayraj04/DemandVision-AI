@@ -649,21 +649,26 @@ if module == "Market Overview":
     ncol1, ncol2 = st.columns(2)
     for idx, item in enumerate(news_items[:4]):
         target_col = ncol1 if idx % 2 == 0 else ncol2
+        sent = str(item.get("sentiment", "NEUTRAL")).upper()
         badge_cls = (
             "badge-bull"
-            if item["sentiment"] == "BULLISH"
-            else ("badge-bear" if item["sentiment"] == "BEARISH" else "badge-neutral")
+            if sent in ("BULLISH", "POSITIVE")
+            else ("badge-bear" if sent in ("BEARISH", "NEGATIVE") else "badge-neutral")
         )
+        time_label = item.get("time_ago") or item.get("timestamp") or "Just now"
+        source_label = item.get("source", "Financial News")
+        headline_text = item.get("headline", "Market Update")
+        summary_text = item.get("summary", "")
         with target_col:
             st.markdown(
                 f"""
                 <div class="terminal-card">
                   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 6px;">
-                    <span style="font-size: 11px; color: #94a3b8; font-family: monospace;">{item['timestamp']} • {item['source']}</span>
-                    <span class="{badge_cls}">{item['sentiment']}</span>
+                    <span style="font-size: 11px; color: #94a3b8; font-family: monospace;">{time_label} • {source_label}</span>
+                    <span class="{badge_cls}">{sent}</span>
                   </div>
-                  <div style="font-weight: 600; font-size: 13px; color: #f8fafc; margin-bottom: 4px;">{item['headline']}</div>
-                  <div style="font-size: 11px; color: #cbd5e1;">{item['summary']}</div>
+                  <div style="font-weight: 600; font-size: 13px; color: #f8fafc; margin-bottom: 4px;">{headline_text}</div>
+                  <div style="font-size: 11px; color: #cbd5e1;">{summary_text}</div>
                 </div>
                 """,
                 unsafe_allow_html=True,
@@ -754,17 +759,23 @@ elif module == "Stock Explorer & Intraday":
     with col_dom:
         st.markdown("#### ⚡ Level-2 Depth of Market (DOM)")
         depth = streamer.get_level2_market_depth(selected_stock)
+        best_bid = depth.get("best_bid", 0.0)
+        best_ask = depth.get("best_ask", 0.0)
+        spread = depth.get("spread", 0.0)
+        spread_pct = depth.get("spread_pct", 0.0)
         st.caption(
-            f"Best Bid: ₹{depth['best_bid']} | Best Ask: ₹{depth['best_ask']} | Spread: ₹{depth['spread']} ({depth['spread_pct']}%)"
+            f"Best Bid: ₹{best_bid:,.2f} | Best Ask: ₹{best_ask:,.2f} | Spread: ₹{spread:.2f} ({spread_pct}%)"
         )
 
+        buy_pres = float(depth.get("buy_pressure_pct", 50.0))
+        sell_pres = float(depth.get("sell_pressure_pct", 50.0))
         st.progress(
-            depth["buy_pressure_pct"] / 100.0,
-            text=f"Buy Pressure: {depth['buy_pressure_pct']}% vs Sell Pressure: {depth['sell_pressure_pct']}%",
+            min(max(buy_pres / 100.0, 0.0), 1.0),
+            text=f"Buy Pressure: {buy_pres:.1f}% vs Sell Pressure: {sell_pres:.1f}%",
         )
 
-        bids_df = pd.DataFrame(depth["bids"])
-        asks_df = pd.DataFrame(depth["asks"])
+        bids_df = pd.DataFrame(depth.get("bids", []))
+        asks_df = pd.DataFrame(depth.get("asks", []))
         st.write("**Top 5 Bids (Buyers):**")
         st.dataframe(bids_df, width="stretch", hide_index=True)
         st.write("**Top 5 Asks (Sellers):**")
@@ -773,19 +784,22 @@ elif module == "Stock Explorer & Intraday":
     with col_opt:
         st.markdown("#### ⚡ Real-Time Options Chain & Greeks")
         opt_data = get_options_chain_analytics(selected_stock)
+        pcr = opt_data.get("put_call_ratio", 1.0)
+        pcr_sent = opt_data.get("pcr_sentiment", "Neutral")
+        max_pain = opt_data.get("max_pain_strike", 0.0)
         st.markdown(
-            f"**Put-Call Ratio (PCR):** `{opt_data['put_call_ratio']}` ({opt_data['pcr_sentiment']}) | **Max Pain:** `₹{opt_data['max_pain_strike']}`"
+            f"**Put-Call Ratio (PCR):** `{pcr}` ({pcr_sent}) | **Max Pain:** `₹{max_pain:,.2f}`"
         )
 
-        greeks = opt_data["atm_greeks"]
+        greeks = opt_data.get("atm_greeks", {})
         gcol1, gcol2, gcol3, gcol4 = st.columns(4)
-        gcol1.metric("Call Delta (Δ)", f"+{greeks['call_delta']}")
-        gcol2.metric("Put Delta (Δ)", f"{greeks['put_delta']}")
-        gcol3.metric("Gamma (Γ)", f"{greeks['gamma']}")
-        gcol4.metric("Theta (Θ)", f"₹{greeks['theta_daily']}")
+        gcol1.metric("Call Delta (Δ)", f"+{greeks.get('call_delta', 0.50)}")
+        gcol2.metric("Put Delta (Δ)", f"{greeks.get('put_delta', -0.50)}")
+        gcol3.metric("Gamma (Γ)", f"{greeks.get('gamma', 0.001)}")
+        gcol4.metric("Theta (Θ)", f"₹{greeks.get('theta_daily', 0.0)}")
 
         st.dataframe(
-            pd.DataFrame(opt_data["option_chain"]).head(6),
+            pd.DataFrame(opt_data.get("option_chain", [])).head(6),
             width="stretch",
             hide_index=True,
         )
